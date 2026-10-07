@@ -1,6 +1,6 @@
 # Blonxin — Ultimate Guide to IPTV Boxes in 2026: Cheap, Premium & Hidden
 Sequel to "Ultimate Guide to IPTV in 2026" (66K views in 5 days). Same formula, buyer-intent topic.
-TTS script: `blonxin-iptv-boxes-2026-tts.txt` (9 parts, ~10 min).
+TTS script: `blonxin-iptv-boxes-2026-tts.txt` (8 parts, ~9–10 min).
 
 ---
 
@@ -77,10 +77,9 @@ If the AI garbles the price tags, generate the grid without text and add the tag
 | 5 Gems | Smart TV app store screen, phone casting, VLC "Open Network Stream" |
 | 6 Traps | Fake "8K / 32GB / 256GB / $30" listing mock-up; warning card |
 | 7 Apps | Table: device → player app (link cards to your Smarters / TiviMate / ETV videos) |
-| 8 Buffering | Screen-record the buffer + player settings in Smarters/TiviMate |
-| 9 Verdict | 4-line verdict card + WhatsApp card |
+| 8 Verdict | 4-line verdict card + WhatsApp card |
 
-End screen → "Ultimate Guide to IPTV in 2026" + your 689K Smarters setup video.
+End screen → "Ultimate Guide to IPTV in 2026" + your 689K Smarters setup video. When the buffering video is out, add it as the end-screen 'next video' (the script promises it).
 
 ---
 
@@ -99,8 +98,7 @@ Two premium streaming boxes just got more expensive — and a $60 box now does a
 5:15 HIDDEN GEMS: what you already own
 6:15 HIDDEN TRAPS: fake specs & "fully loaded" boxes
 7:30 Which IPTV player goes on which box
-8:30 3 settings that stop buffering
-9:30 Which box should you buy?
+8:30 The box I'd buy with my own money
 
 📺 Watch next: Ultimate Guide to IPTV in 2026 → [link]
 🛠️ IPTV Smarters Pro setup → [link]
