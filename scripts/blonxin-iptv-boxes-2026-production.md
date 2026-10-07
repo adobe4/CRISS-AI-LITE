@@ -13,7 +13,8 @@ TTS script: `blonxin-iptv-boxes-2026-tts.txt` (9 parts, ~10 min).
 | Nvidia Shield TV Pro | **$299.99** since Oct 2, 2026 (was $199; some stores discount to $170–180) | [9to5Google](https://9to5google.com/2026/10/02/nvidia-shield-tv-pro-price-hike/) · [VideoCardz](https://videocardz.com/newz/nvidia-shield-tv-pro-is-now-299-nearly-seven-years-after-launching-at-199) |
 | Google TV Streamer | **$149.99** since Aug 31, 2026 (was $99.99) | [9to5Google](https://9to5google.com/2026/08/31/google-tv-streamer-increase/) |
 | Onn 4K Pro (2026) | **$60**, Walmart only — 3GB RAM, 32GB, Wi-Fi 6, Dolby Vision/Atmos, Google TV | [Android Authority](https://www.androidauthority.com/onn-4k-pro-2026-review-3677202/) |
-| Xiaomi TV Box S 3rd Gen | **~$60–90** depending on country/seller (Amazon US $89.99) | [PriceSpy](https://pricespy.co.uk/product.php?p=14551443) |
+| Xiaomi TV Box S 3rd Gen | **~$62–90** depending on country/seller — 2GB RAM, 32GB, Wi-Fi 6, no Ethernet | [AndroidPCTV review](https://androidpctv.com/xiaomi-tv-box-s-3rd-gen-review/) · [PriceSpy](https://pricespy.co.uk/product.php?p=14551443) |
+| BadBox 2.0 malware (Part 6) | FBI warning: preinstalled on off-brand Android TV boxes (e.g. VSeeBox, SuperBox), 222 countries | [BleepingComputer](https://www.bleepingcomputer.com/news/security/fbi-badbox-20-android-malware-infects-millions-of-consumer-devices/) |
 
 ⚠️ If any price moves before upload, change the number in Part 1, 3, 4 and 9 of the script.
 

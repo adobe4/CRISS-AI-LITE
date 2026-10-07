@@ -35,9 +35,9 @@ Number one. The Onn 4K Pro, the 2026 version. Sixty dollars, sold at Walmart. Th
 
 The catch. It's a Walmart product, so outside the United States it's hard to find.
 
-Which brings me to number two. The Xiaomi TV Box S, third generation. This is the one I'd point you to if you live outside America, because it's sold almost everywhere. Depending on your country and the seller, expect somewhere between sixty and ninety dollars. Google TV, 4K, and it handles IPTV apps without drama.
+Which brings me to number two. The Xiaomi TV Box S, third generation. This is the one I'd point you to if you live outside America, because it's sold almost everywhere. Depending on your country and the seller, expect somewhere between sixty and ninety dollars. Google TV, 4K, Wi-Fi six, Dolby Vision, and thirty-two gigabytes of storage.
 
-The catch. Prices swing a lot between sellers, so compare before you buy, and make sure it's the genuine Xiaomi box, not a copy.
+The catch. It only has two gigabytes of RAM, and there's no ethernet port. For one IPTV app it's fine. If you keep many apps open, you'll feel it. And prices swing a lot between sellers, so compare before you buy, and make sure it's the genuine Xiaomi box, not a copy.
 
 For most people watching this, one of these two boxes is all you will ever need.
 
@@ -48,7 +48,7 @@ Now the premium tier. And this is where this month's news changes everything.
 
 Number three. The Google TV Streamer. Four gigabytes of RAM, thirty-two gigabytes of storage, an ethernet port, and it's fast. It launched at one hundred dollars. On August thirty-first, Google raised it to one hundred and fifty. It's a great box. But at one fifty, against a sixty dollar box that does most of the same job, it's hard to recommend, unless you live inside Google's smart home world, or you catch it on sale.
 
-Number four. The Nvidia Shield TV Pro. For years, this was the king. And honestly, it still feels like the fastest box in most tests. It also does things nothing else does. AI upscaling, which makes HD channels look sharper on a 4K TV. USB ports for hard drives. It can even run a Plex server.
+Number four. The Nvidia Shield TV Pro. For years, this was the king. And honestly, it's still one of the smoothest boxes you can buy. It also does things nothing else does. AI upscaling, which makes HD channels look sharper on a 4K TV. USB ports for hard drives. It can even run a Plex server.
 
 But. It's the same hardware Nvidia released back in 2019. And on October second, the price jumped to two hundred and ninety-nine dollars. Some stores still discount it to around one seventy or one eighty.
 
@@ -72,7 +72,7 @@ And now, the part sellers don't want you to know. The hidden traps.
 
 Trap number one. The fake spec box. You've seen them online. Eight K. Thirty-two gigabytes of RAM. Two hundred and fifty-six gigabytes of storage. All for thirty dollars. Those numbers are usually fake. The system is modified to show specs the hardware doesn't actually have. In real use, these boxes lag, overheat, and many of them never get a single security update.
 
-Trap number two. The fully loaded box. These sell for three to four hundred dollars, with thousands of channels already built in and no monthly fee. Sounds amazing. But the content on them usually isn't licensed, which means the apps can disappear overnight. And there have been repeated reports of boxes like these shipping with malware. You pay once, and you might lose everything without warning.
+Trap number two. The fully loaded box. These sell for three to four hundred dollars, with thousands of channels already built in and no monthly fee. Sounds amazing. But the content on them usually isn't licensed, which means the apps can disappear overnight. And it gets worse. The FBI has publicly warned about malware called BadBox two point oh, found on cheap, off-brand Android TV boxes, and some of these boxes ship with it already installed. Infections were found in two hundred and twenty-two countries. Your box can secretly use your internet connection for criminals, while you're watching TV. You pay once, and you might lose a lot more than your money.
 
 Here's the rule. If a box promises everything, for free, forever, the hidden cost is somewhere. Usually, it's your security.
 
