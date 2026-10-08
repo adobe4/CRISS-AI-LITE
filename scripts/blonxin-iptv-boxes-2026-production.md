@@ -76,18 +76,15 @@ If the AI garbles the price tags, generate the grid without text and add the tag
 | 4 Premium | Old price crossed out → new price (red), discount range in green |
 | 5 Gems | Smart TV app store screen, phone casting, VLC "Open Network Stream" |
 | 6 Traps | Fake "8K / 32GB / 256GB / $30" listing mock-up; warning card |
-| 7 Apps | Table: device → player app (link cards to your Smarters / TiviMate / ETV videos) |
-| 8 Verdict | 4-line verdict card + WhatsApp card |
+| 7 Apps | Table: device → player app (link cards to your Smarters / TiviMate videos) |
+| 8 Verdict | 4-line verdict card + "tell me your budget in the comments" card |
 
 End screen → "Ultimate Guide to IPTV in 2026" + your 689K Smarters setup video. When the buffering video is out, add it as the end-screen 'next video' (the script promises it).
 
 ---
 
-## 5. Description (paste — WhatsApp FIRST)
+## 5. Description (paste)
 ```
-📱 Not sure which box fits your budget or country? WhatsApp me: +255 XXX XXX XXX
-Tell me your device + budget — free setup help & free trial.
-
 Two premium streaming boxes just got more expensive — and a $60 box now does almost everything they do. In this 2026 guide I split every IPTV box into three groups: the cheap ones that are secretly great, the premium ones (and whether they're still worth it), and the hidden tier — the gems you already own and the traps sellers hope you never notice.
 
 ⏱️ Chapters
@@ -111,15 +108,13 @@ Disclaimer: Educational review. Prices checked at time of recording and may chan
 
 ## 6. Pinned comment
 ```
-📱 Tell me your budget + country and I'll tell you the exact box to buy → WhatsApp +255 XXX XXX XXX
-
 Which one are you getting?
 1️⃣ Onn 4K Pro  2️⃣ Xiaomi Box S  3️⃣ Google TV Streamer  4️⃣ Shield Pro  5️⃣ My Smart TV is enough
 ```
 
 ## 7. Upload checklist
 - [ ] Prices re-checked on upload day
-- [ ] WhatsApp line is the FIRST line of the description
+- [ ] NO WhatsApp number, "free trial" or IPTV-service offer anywhere (title, description, pinned comment, voice, screen) — channel got a strike for "unauthorized sale of IPTV content"
 - [ ] No leftover AI text in the description
 - [ ] Pinned comment posted + hearted
 - [ ] End screen → IPTV Ultimate Guide + Smarters setup
