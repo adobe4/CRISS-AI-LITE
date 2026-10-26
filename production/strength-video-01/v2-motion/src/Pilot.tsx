@@ -118,9 +118,9 @@ const World: React.FC = () => (
     {t: 38.5, x: S6 + 960, y: 540, z: 1},
   ]}>
     {/* scene 2: soldier vs ghost bodybuilder */}
-    <Cutout src="soldier_stand" h={760} breathe keys={[{t: 13.4, x: S2 - 400, y: FLOOR, r: -8}, {t: 14.0, x: S2 + 560, y: FLOOR, r: 0}]} />
-    <DrawSvg data={bbStand} cx={S2 + 1380} cy={FLOOR - 390} h={780} start={15.0} end={16.0} ghost out={17.2} />
-    <Stroke d={scribblePath(560, 700, 9, 'x1')} x={S2 + 1100} y={FLOOR - 760} start={16.1} end={16.6} w={16} out={17.2} />
+    <Cutout src="soldier_stand" h={760} breathe keys={[{t: 13.4, x: S2 - 400, y: FLOOR, r: -8}, {t: 14.0, x: S2 + 420, y: FLOOR, r: 0}]} />
+    <DrawSvg data={bbStand} cx={S2 + 1500} cy={FLOOR - 360} h={720} start={15.0} end={16.0} ghost out={17.2} />
+    <Stroke d={scribblePath(520, 650, 9, 'x1')} x={S2 + 1240} y={FLOOR - 700} start={16.1} end={16.6} w={16} out={17.2} />
 
     {/* scene 3: bodybuilder up the stairs */}
     <Stroke d={stairs} x={S3 + 380} y={FLOOR} start={18.0} end={18.9} w={10} />
@@ -176,7 +176,7 @@ export const Pilot: React.FC<{inFull?: boolean}> = ({inFull}) => {
       <>
         <World />
         {/* screen-space words over the paper world */}
-        <Slam lines={['NOT EVEN', 'CLOSE.']} at={16.08} out={17.7} size={150} top={70} />
+        <Slam lines={['NOT EVEN', 'CLOSE.']} at={16.08} out={17.7} size={130} top={60} />
         <Slam lines={['?']} at={22.96} out={24.45} size={560} />
         <Slam lines={['WEAKER.']} at={31.42} out={32.25} size={230} top={40} />
         <Slam lines={['PER MM²']} at={32.6} out={34.5} size={230} top={60} />

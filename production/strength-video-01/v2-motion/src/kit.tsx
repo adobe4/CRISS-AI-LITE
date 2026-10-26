@@ -80,7 +80,7 @@ export const Slam: React.FC<{lines: string[]; at: number; out: number; size?: nu
         const sc = interpolate(sp, [0, 1], [2.1, 1]);
         const e1 = Math.max(st + 4, f(out) - 5), e2 = Math.max(e1 + 1, f(out));
         const o = interpolate(fr, [st, st + 3, e1, e2], [0, 1, 1, 0], clamp);
-        const rot = interpolate(sp, [0, 1], [i % 2 ? 6 : -6, i % 2 ? 1.2 : -1.2]);
+        const rot = interpolate(sp, [0, 1], [i % 2 ? 4 : -4, 0]);
         return (
           <div key={i} style={{fontFamily, fontWeight: 900, fontSize: size, lineHeight: 0.92, color, letterSpacing: -2, textTransform: 'uppercase', opacity: o,
             transform: `scale(${sc}) rotate(${rot}deg)`, textShadow: shadow ? '0 10px 40px rgba(0,0,0,0.75), 0 2px 4px rgba(0,0,0,0.9)' : `0 0 18px ${PAPER}, 0 0 36px ${PAPER}, 0 0 60px ${PAPER}, 0 0 8px ${PAPER}`}}>{l}</div>
@@ -210,7 +210,7 @@ export const Win: React.FC<{from: number; to: number; children: React.ReactNode}
   return <>{children}</>;
 };
 
-export const WText: React.FC<{lines: string[]; at: number; out: number; x: number; y: number; size?: number; rot?: number}> = ({lines, at, out, x, y, size = 150, rot = -2}) => {
+export const WText: React.FC<{lines: string[]; at: number; out: number; x: number; y: number; size?: number; rot?: number}> = ({lines, at, out, x, y, size = 150}) => {
   const fr = useCurrentFrame();
   const {fps} = useVideoConfig();
   if (fr < f(at) || fr > f(out) + 1) return null;
@@ -219,7 +219,7 @@ export const WText: React.FC<{lines: string[]; at: number; out: number; x: numbe
   const e1 = Math.max(f(at) + 4, f(out) - 6), e2 = Math.max(e1 + 1, f(out));
   const o = interpolate(fr, [f(at), f(at) + 3, e1, e2], [0, 1, 1, 0], clamp);
   return (
-    <div style={{position: 'absolute', left: x, top: y, transform: `translate(-50%, -50%) scale(${sc}) rotate(${rot}deg)`, opacity: o, textAlign: 'center', whiteSpace: 'nowrap'}}>
+    <div style={{position: 'absolute', left: x, top: y, transform: `translate(-50%, -50%) scale(${sc}) rotate(${interpolate(sp, [0, 1], [-4, 0])}deg)`, opacity: o, textAlign: 'center', whiteSpace: 'nowrap'}}>
       {lines.map((l, i) => (
         <div key={i} style={{fontFamily, fontWeight: 900, fontSize: size, lineHeight: 0.92, color: INK, letterSpacing: -2, textTransform: 'uppercase',
           textShadow: `0 0 18px ${PAPER}, 0 0 36px ${PAPER}, 0 0 8px ${PAPER}`}}>{l}</div>

@@ -160,11 +160,11 @@ const Cubes: React.FC<{x: number; y: number; at: number; growAt: number}> = ({x,
 const DriftWords: React.FC<{x: number; y: number; at: number; apart: number; together: number}> = ({x, y, at, apart, together}) => {
   const t = useT();
   if (t < at || t > together + 2.2) return null;
-  const sep = interpolate(t, [apart, apart + 0.9], [0, 380], cl) - interpolate(t, [together, together + 0.35], [0, 380], cl);
+  const sep = interpolate(t, [apart, apart + 0.9], [0, 220], cl) - interpolate(t, [together, together + 0.35], [0, 220], cl);
   const o = interpolate(t, [at, at + 0.2], [0, 1], cl);
   const shake = t > together && t < together + 0.4 ? Math.sin(t * 80) * 6 : 0;
-  const st = (dx: number, rot: number): React.CSSProperties => ({position: 'absolute', left: x + dx + shake, top: y, transform: `translate(-50%,-50%) rotate(${rot}deg)`, fontFamily, fontWeight: 900, fontSize: 150, color: INK, opacity: o, whiteSpace: 'nowrap', textShadow: `0 0 18px ${PAPER}`});
-  return (<><div style={st(-260 - sep, -3)}>SIZE</div><div style={st(330 + sep, 3)}>STRENGTH</div></>);
+  const st = (dx: number, rot: number): React.CSSProperties => ({position: 'absolute', left: x + dx + shake, top: y, transform: `translate(-50%,-50%)`, fontFamily, fontWeight: 900, fontSize: 130, color: INK, opacity: o, whiteSpace: 'nowrap', textShadow: `0 0 18px ${PAPER}`});
+  return (<><div style={st(-300 - sep, 0)}>SIZE</div><div style={st(260 + sep, 0)}>STRENGTH</div></>);
 };
 
 const Sand: React.FC<{x: number; y: number; at: number; dur: number}> = ({x, y, at, dur}) => {
@@ -222,8 +222,8 @@ const World: React.FC = () => {
         <OnPan src="balloon_arm" at={50.7} x={C(0) + 960 - 380} side={-1} tiltAt={52.9} h={230} />
         <OnPan src="spring" at={52.4} x={C(0) + 960 + 380} side={1} tiltAt={52.9} h={190} />
         <WText lines={['SIZE']} at={51.0} out={57.2} x={C(0) + 560} y={180} size={150} />
-        <WText lines={['FORCE']} at={52.9} out={57.2} x={C(0) + 1360} y={180} size={150} rot={2} />
-        <WText lines={['≠']} at={55.7} out={57.2} x={C(0) + 960} y={170} size={220} rot={0} />
+        <WText lines={['FORCE']} at={52.9} out={57.2} x={C(0) + 1360} y={180} size={150} />
+        <WText lines={['≠']} at={55.7} out={57.2} x={C(0) + 960} y={170} size={220} />
       </Win>
       {/* 1 · the bodybuilder */}
       <Win from={56.5} to={END(1)}>
@@ -238,7 +238,7 @@ const World: React.FC = () => {
         <Cutout src="soldier_crate" h={520} keys={[{t: 70.5, x: C(2) + 360, y: FL + 10}, {t: 70.7, x: C(2) + 360, y: FL}, {t: 71.4, x: C(2) + 360, y: FL - 30}]} />
         <WText lines={['LIFT']} at={70.7} out={73.9} x={C(2) + 360} y={260} size={140} />
         <Cutout src="soldier_walk" h={560} walk={2} keys={[{t: 71.6, x: C(2) + 700, y: FL}, {t: 73.4, x: C(2) + 1050, y: FL}, {t: 74.6, x: C(2) + 2700, y: FL}]} />
-        <WText lines={['CARRY']} at={71.7} out={73.9} x={C(2) + 900} y={200} size={140} rot={2} />
+        <WText lines={['CARRY']} at={71.7} out={73.9} x={C(2) + 900} y={200} size={140} />
         <Cutout src="soldier_drag" h={420} keys={[{t: 72.9, x: C(2) + 1800, y: FL}, {t: 74.2, x: C(2) + 1560, y: FL}]} />
         <WText lines={['DRAG']} at={73.0} out={74.3} x={C(2) + 1550} y={330} size={140} />
         <Pop src="scorecards" at={74.6} x={C(2) + 960} y={700} h={420} out={77.6} />
@@ -250,7 +250,7 @@ const World: React.FC = () => {
       {/* 3 · the body is practical */}
       <Win from={78.5} to={END(3)}>
         <Win from={79} to={84.4}><Gears x={C(3) + 520} y={480} at={79.4} /></Win>
-        <WText lines={['BRUTALLY', 'PRACTICAL']} at={80.2} out={84.2} x={C(3) + 1350} y={430} size={130} />
+        <WText lines={['BRUTALLY', 'PRACTICAL']} at={80.2} out={84.2} x={C(3) + 1450} y={430} size={120} />
         <Cutout src="balloon_arm" h={260} keys={[{t: 84.5, x: C(3) + 600, y: FL - 50, s: 0.6}, {t: 86.0, x: C(3) + 600, y: FL - 50, s: 1.5}]} />
         <WText lines={['SIZE']} at={84.7} out={86.8} x={C(3) + 600} y={330} size={150} />
         <Cutout src="stone_carry" h={600} walk={1.6} keys={[{t: 86.9, x: C(3) + 1000, y: FL}, {t: 92.5, x: C(3) + 1700, y: FL}]} />
@@ -264,10 +264,10 @@ const World: React.FC = () => {
         <Sand x={C(4) + 700} y={160} at={99.6} dur={1.3} />
         <Cutout src="rook_backpack" h={700} walk={2} keys={[{t: 99.2, x: C(4) + 700, y: FL}, {t: 101.7, x: C(4) + 700, y: FL}, {t: 104.0, x: C(4) + 1350, y: FL, o: 1}, {t: 104.2, x: C(4) + 1380, y: FL, o: 0}]} />
         <WText lines={['10 KG']} at={99.8} out={101.6} x={C(4) + 1250} y={380} size={170} />
-        <WText lines={['WEEK 1']} at={102.6} out={104.0} x={C(4) + 1380} y={200} size={170} />
+        <WText lines={['WEEK 1']} at={102.6} out={104.0} x={C(4) + 1300} y={110} size={150} />
         <Cutout src="rook_tired" h={700} walk={1.1} keys={[{t: 104.1, x: C(4) + 1380, y: FL}, {t: 109.8, x: C(4) + 1700, y: FL}]} />
-        <WText lines={['SORE']} at={104.3} out={105.5} x={C(4) + 1900} y={300} size={150} />
-        <WText lines={['SLOW']} at={105.6} out={106.6} x={C(4) + 1900} y={300} size={150} />
+        <WText lines={['SORE']} at={104.3} out={105.5} x={C(4) + 2050} y={330} size={150} />
+        <WText lines={['SLOW']} at={105.6} out={106.6} x={C(4) + 2050} y={330} size={150} />
         <DrawSvg data={bodyNerves} cx={C(4) + 2100} cy={540} h={700} start={106.4} end={108.3} fillAt={108.4} raster="body_nerves" />
       </Win>
       {/* 5 · the 1979 study */}
@@ -276,23 +276,23 @@ const World: React.FC = () => {
         <DrawSvg data={microscope} cx={C(5) + 560} cy={620} h={560} start={110.5} end={111.8} fillAt={111.9} raster="microscope" out={117.6} />
         <WText lines={['8 WEEKS']} at={117.0} out={119.6} x={C(5) + 1450} y={200} size={170} />
         <Chart x={C(5) + 900} y={340} at={118.0} c1={119.0} c2={124.6} band={120.7} />
-        <WText lines={['WEEKS 3–5']} at={121.3} out={123.5} x={C(5) + 1065} y={290} size={90} rot={0} />
-        <WText lines={['NERVES']} at={123.6} out={126.4} x={C(5) + 1500} y={470} size={110} rot={0} />
-        <WText lines={['MUSCLE']} at={125.0} out={126.4} x={C(5) + 1650} y={790} size={90} rot={0} />
+        <WText lines={['WEEKS 3–5']} at={121.3} out={123.5} x={C(5) + 1065} y={290} size={90} />
+        <WText lines={['NERVES']} at={123.6} out={126.4} x={C(5) + 1500} y={470} size={110} />
+        <WText lines={['MUSCLE']} at={125.0} out={126.4} x={C(5) + 1650} y={790} size={90} />
       </Win>
       {/* 6 · team of workers */}
       <Win from={125.9} to={END(6)}>
         <Workers x={C(6) + 560} y={760} at={127.6} partial={129.3} sync={137.3} brainAt={134.2} />
         <Pop src="brain_foreman" at={134.3} x={C(6) + 230} y={760} h={360} bob={6} />
         <WText lines={['SAME TEAM.']} at={139.2} out={141.4} x={C(6) + 960} y={190} size={150} />
-        <WText lines={['BETTER BOSS.']} at={140.2} out={141.4} x={C(6) + 960} y={340} size={150} rot={2} />
+        <WText lines={['BETTER BOSS.']} at={140.2} out={141.4} x={C(6) + 960} y={340} size={150} />
       </Win>
       {/* 7 · week 3 and week 8 */}
       <Win from={140.9} to={END(7)}>
         <WText lines={['WEEK 3']} at={141.7} out={145.3} x={C(7) + 960} y={190} size={170} />
         <Cutout src="rook_backpack" h={640} walk={3.2} keys={[{t: 141.8, x: C(7) - 200, y: FL}, {t: 144.6, x: C(7) + 560, y: FL}, {t: 149.6, x: C(7) + 560, y: FL, o: 1}, {t: 149.8, x: C(7) + 560, y: FL, o: 0}]} />
-        <DrawSvg data={mirror} cx={C(7) + 1150} cy={560} h={700} start={145.4} end={146.4} fillAt={146.4} raster="mirror" out={159.4} />
-        <WText lines={['STRONGER', 'ANYWAY.']} at={147.8} out={149.7} x={C(7) + 1650} y={330} size={130} />
+        <DrawSvg data={mirror} cx={C(7) + 1020} cy={560} h={700} start={145.4} end={146.4} fillAt={146.4} raster="mirror" out={159.4} />
+        <WText lines={['STRONGER', 'ANYWAY.']} at={147.8} out={149.7} x={C(7) + 1560} y={330} size={115} />
         <WText lines={['WEEK 8']} at={149.9} out={153.4} x={C(7) + 960} y={190} size={170} />
         <DrawSvg data={fibreSingle} cx={C(7) + 560} cy={620} h={360} start={151.1} end={152.6} fillAt={152.7} raster="fibre_single" out={159.4} />
         <Stroke d={scribblePath(520, 640, 7, 'mir')} x={C(7) + 890} y={240} start={157.0} end={157.4} w={18} out={159.4} />
@@ -319,8 +319,8 @@ const World: React.FC = () => {
         <Gauge x={C(9) + 960} y={300} at={186.6} val={0.92} swingAt={187.3} />
         <Gauge x={C(9) + 1500} y={300} at={186.8} val={0.55} swingAt={187.3} />
         <WText lines={['LAST.']} at={190.4} out={192.0} x={C(9) + 420} y={110} size={130} />
-        <WText lines={['−62%']} at={193.2} out={197.6} x={C(9) + 690} y={500} size={220} rot={0} />
-        <WText lines={['−41%']} at={197.9} out={201.0} x={C(9) + 1230} y={500} size={220} rot={0} />
+        <WText lines={['−62%']} at={193.2} out={197.6} x={C(9) + 690} y={500} size={220} />
+        <WText lines={['−41%']} at={197.9} out={201.0} x={C(9) + 1230} y={500} size={220} />
       </Win>
       <Win from={202.0} to={END(9)}>
         <Jitter at={204.2}>
@@ -342,7 +342,7 @@ const World: React.FC = () => {
         <WText lines={['SIMPLE', 'PHYSICS']} at={229.8} out={231.3} x={C(11) + 960} y={200} size={130} />
         <Pop src="fibre" at={231.5} x={C(11) + 520} y={800} h={480} />
         <Stroke d="M -230 0 L 230 0 M -190 -30 L -230 0 L -190 30 M 190 -30 L 230 0 L 190 30" x={C(11) + 520} y={870} start={234.8} end={235.4} w={10} />
-        <WText lines={['THICKNESS']} at={235.1} out={239.6} x={C(11) + 520} y={980} size={80} rot={0} />
+        <WText lines={['THICKNESS']} at={235.1} out={239.6} x={C(11) + 520} y={980} size={80} />
         <Cubes x={C(11) + 980} y={800} at={236.4} growAt={240.7} />
         <WText lines={['VOLUME']} at={238.7} out={245.4} x={C(11) + 1550} y={220} size={130} />
       </Win>
@@ -351,14 +351,14 @@ const World: React.FC = () => {
         <WText lines={['1937']} at={246.5} out={250.0} x={C(12) + 960} y={190} size={200} />
         <Pop src="old_lifter" at={246.6} x={C(12) + 600} y={FL} h={440} />
         <Pop src="old_lifter" at={251.9} x={C(12) + 1350} y={FL} h={640} />
-        <WText lines={['KILO', 'FOR KILO']} at={256.9} out={261.4} x={C(12) + 960} y={230} size={130} />
-        <WText lines={['★']} at={258.4} out={261.4} x={C(12) + 600} y={420} size={140} rot={0} />
+        <WText lines={['KILO FOR KILO']} at={256.9} out={261.4} x={C(12) + 960} y={130} size={110} />
+        <WText lines={['★']} at={258.4} out={261.4} x={C(12) + 600} y={420} size={140} />
       </Win>
       {/* 13 · what the pack trains */}
       <Win from={277.2} to={END(13)}>
         <Pop src="soldier_walk" at={278.0} x={C(13) + 700} y={FL} h={760} />
-        <WText lines={['LEGS']} at={282.4} out={289.0} x={C(13) + 1050} y={760} size={110} rot={0} />
-        <WText lines={['BACK']} at={283.4} out={289.0} x={C(13) + 260} y={260} size={110} rot={0} />
+        <WText lines={['LEGS']} at={282.4} out={289.0} x={C(13) + 1050} y={760} size={110} />
+        <WText lines={['BACK']} at={283.4} out={289.0} x={C(13) + 260} y={260} size={110} />
         <DrawSvg data={spine} cx={C(13) + 1250} cy={500} h={640} start={284.4} end={285.8} fillAt={285.9} raster="spine" />
         <Pop src="hands_straps" at={287.1} x={C(13) + 1640} y={760} h={380} />
         <WText lines={['GRIP']} at={287.2} out={289.0} x={C(13) + 1640} y={300} size={130} />
@@ -369,30 +369,30 @@ const World: React.FC = () => {
         <Pop src="balloon_arm" at={314.8} x={C(14) + 1300} y={700} h={260} out={317.0} />
         <Stroke d={scribblePath(360, 300, 7, 'bulk')} x={C(14) + 1120} y={420} start={315.4} end={315.8} w={16} out={317.0} />
         <WText lines={['THE COPY-IT', 'ROUTINE']} at={317.1} out={320.3} x={C(14) + 1300} y={360} size={120} />
-        <WText lines={['3× A WEEK']} at={318.7} out={320.3} x={C(14) + 1300} y={620} size={110} rot={2} />
-        <WText lines={['1 · BACKPACK WALK']} at={320.6} out={327.6} x={C(14) + 960} y={130} size={110} rot={0} />
+        <WText lines={['3× A WEEK']} at={318.7} out={320.3} x={C(14) + 1300} y={620} size={110} />
+        <WText lines={['1 · BACKPACK WALK']} at={320.6} out={327.6} x={C(14) + 960} y={130} size={110} />
         <Pop src="books" at={323.7} x={C(14) + 560} y={FL} h={260} out={327.8} drop />
         <Pop src="rice_bag" at={324.4} x={C(14) + 900} y={FL} h={300} out={327.8} drop />
-        <WText lines={['~10% BODY WEIGHT']} at={325.6} out={327.8} x={C(14) + 1450} y={560} size={90} />
+        <WText lines={['~10% BODY WEIGHT']} at={325.6} out={327.8} x={C(14) + 1398} y={560} size={90} />
         <Cutout src="rook_backpack" h={640} walk={2} keys={[{t: 327.9, x: C(14) + 150, y: FL}, {t: 334.0, x: C(14) + 850, y: FL}]} />
         <WText lines={['20 MIN']} at={328.6} out={330.4} x={C(14) + 1500} y={300} size={160} />
         <WText lines={['+ WEIGHT']} at={330.8} out={334.0} x={C(14) + 1500} y={250} size={110} />
         <WText lines={['OR + TIME']} at={331.8} out={334.0} x={C(14) + 1500} y={390} size={110} />
-        <WText lines={['NEVER BOTH']} at={332.9} out={334.0} x={C(14) + 1500} y={560} size={110} rot={3} />
+        <WText lines={['NEVER BOTH']} at={332.9} out={334.0} x={C(14) + 1500} y={560} size={110} />
       </Win>
       {/* 15 · farmer carry */}
       <Win from={333.5} to={END(15)}>
-        <WText lines={['2 · FARMER CARRY']} at={334.2} out={340.8} x={C(15) + 960} y={130} size={110} rot={0} />
+        <WText lines={['2 · FARMER CARRY']} at={334.2} out={340.8} x={C(15) + 960} y={130} size={110} />
         <Cutout src="rook_jugs" h={660} walk={2} keys={[{t: 335.0, x: C(15) + 300, y: FL}, {t: 340.9, x: C(15) + 300, y: FL}, {t: 342.1, x: C(15) + 1500, y: FL}, {t: 342.6, x: C(15) + 1500, y: FL + 25}]} />
         <Stroke d="M 0 0 L 1300 0 M 0 -25 L 0 25 M 1300 -25 L 1300 25" x={C(15) + 260} y={FL + 60} start={340.9} end={342.1} w={8} />
-        <WText lines={['30 M']} at={341.3} out={343.8} x={C(15) + 900} y={FL - 30} size={110} rot={0} />
+        <WText lines={['30 M']} at={341.3} out={343.8} x={C(15) + 900} y={FL - 30} size={110} />
         <WText lines={['STAND TALL']} at={339.3} out={340.8} x={C(15) + 900} y={330} size={110} />
         <WText lines={['4 ROUNDS']} at={343.9} out={345.4} x={C(15) + 960} y={300} size={150} />
         <Tally x={C(15) + 860} y={450} times={[344.0, 344.2, 344.4, 344.6]} />
       </Win>
       {/* 16 · floor lift */}
       <Win from={344.7} to={END(16)}>
-        <WText lines={['3 · FLOOR LIFT']} at={345.4} out={350.8} x={C(16) + 960} y={130} size={110} rot={0} />
+        <WText lines={['3 · FLOOR LIFT']} at={345.4} out={350.8} x={C(16) + 960} y={130} size={110} />
         <Cutout src="rook_lift" h={600} keys={[{t: 345.6, x: C(16) + 650, y: FL}, {t: 353.0, x: C(16) + 650, y: FL}, {t: 353.5, x: C(16) + 650, y: FL - 40}, {t: 354.1, x: C(16) + 650, y: FL}]} />
         <WText lines={['BACK FLAT']} at={351.9} out={354.2} x={C(16) + 1350} y={420} size={120} />
         <WText lines={['3 × 5']} at={354.4} out={357.2} x={C(16) + 1350} y={420} size={200} />
@@ -418,7 +418,7 @@ const World: React.FC = () => {
         <WText lines={['NOT MEDICAL', 'ADVICE']} at={380.6} out={384.6} x={C(18) + 960} y={420} size={130} />
         <Cutout src="soldier_walk" h={600} walk={2} keys={[{t: 385.6, x: C(18) - 200, y: FL}, {t: 391.0, x: C(18) + 700, y: FL}]} />
         <Cutout src="rook_backpack" h={600} walk={2.1} keys={[{t: 385.8, x: C(18) - 600, y: FL}, {t: 391.0, x: C(18) + 330, y: FL}]} />
-        <WText lines={["IT'S A JOB."]} at={390.0} out={391.3} x={C(18) + 1450} y={330} size={140} />
+        <WText lines={["IT'S A JOB."]} at={390.0} out={391.3} x={C(18) + 1368} y={330} size={140} />
         <DrawSvg data={bodyNerves} cx={C(18) + 1450} cy={540} h={760} start={391.5} end={393.3} fillAt={393.4} raster="body_nerves" out={397.2} />
         <WText lines={['NO DEAD', 'WEIGHT.']} at={397.6} out={399.4} x={C(18) + 1450} y={300} size={140} />
       </Win>
