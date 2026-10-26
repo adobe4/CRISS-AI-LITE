@@ -1,0 +1,844 @@
+[
+ {
+  "id": "s001",
+  "t": 0.0,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a lean soldier in plain field uniform marching alone on a long dirt road at dawn, carrying a huge heavy rucksack, side view, steady stride",
+  "text": [
+   "Pack \u2248 half his body weight"
+  ]
+ },
+ {
+  "id": "s002",
+  "t": 3.0,
+  "mode": "B",
+  "rook": false,
+  "prompt": "close-up of a soldier's boots and rucksack straps digging into his shoulders, heavy load, dust on the road",
+  "text": []
+ },
+ {
+  "id": "s003",
+  "t": 6.0,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a lean soldier gripping a loaded hexagonal trap bar in a field gym tent, mid deadlift, calm focused face",
+  "text": []
+ },
+ {
+  "id": "s004",
+  "t": 9.4,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a lean soldier walking backward dragging a heavy weighted sled by its straps across a grass field, effort",
+  "text": [
+   "90 lb sled"
+  ]
+ },
+ {
+  "id": "s005",
+  "t": 13.4,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a lean, average-looking soldier standing relaxed with his rucksack at his feet, next to a faint dotted ghost outline of a giant bodybuilder silhouette",
+  "text": []
+ },
+ {
+  "id": "s006",
+  "t": 17.0,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a huge muscular bodybuilder in a gym admiring his biceps in a large mirror",
+  "text": []
+ },
+ {
+  "id": "s007",
+  "t": 20.2,
+  "mode": "B",
+  "rook": false,
+  "prompt": "the same huge bodybuilder sweating and struggling up a narrow apartment staircase carrying heavy shopping bags",
+  "text": []
+ },
+ {
+  "id": "s008",
+  "t": 24.6,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a wooden desk with a DNA model and a pill bottle pushed aside, a magnifying glass in the centre, mystery mood",
+  "text": []
+ },
+ {
+  "id": "s009",
+  "t": 28.2,
+  "mode": "D",
+  "rook": false,
+  "prompt": "microscope view of skeletal muscle fibres in cross-section, one very thick fibre and several thinner ones, thinner ones glow copper",
+  "text": []
+ },
+ {
+  "id": "s010",
+  "t": 32.2,
+  "mode": "D",
+  "rook": false,
+  "prompt": "a single muscle fibre cross-section placed on a fine measuring grid of tiny squares, one square highlighted in copper",
+  "text": [
+   "Force per mm\u00b2"
+  ]
+ },
+ {
+  "id": "s011",
+  "t": 37.8,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook walking steadily while carrying two heavy water jugs, a large stopwatch floating beside him",
+  "text": []
+ },
+ {
+  "id": "s012",
+  "t": 42.9,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook standing confidently with arms crossed, looking at the viewer, slight smile, plain background",
+  "text": []
+ },
+ {
+  "id": "s013",
+  "t": 47.9,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a crossroads: one path leads to a large ornate mirror, the other path leads to a pile of heavy wooden crates and sandbags",
+  "text": []
+ },
+ {
+  "id": "s014",
+  "t": 50.7,
+  "mode": "D",
+  "rook": false,
+  "prompt": "an antique balance scale: on one side a big inflated balloon shaped like a bicep, on the other a small dense coiled steel spring, the spring side is lower",
+  "text": [
+   "SIZE \u2260 FORCE"
+  ]
+ },
+ {
+  "id": "s015",
+  "t": 55.3,
+  "mode": "D",
+  "rook": false,
+  "prompt": "two ropes each holding a hanging weight: a thick fluffy rope stretching and fraying, and a thin steel cable holding a much heavier weight firmly, the cable glows copper",
+  "text": []
+ },
+ {
+  "id": "s016",
+  "t": 57.3,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a bodybuilder doing many sets on a cable machine, pumped veins, sweat",
+  "text": []
+ },
+ {
+  "id": "s017",
+  "t": 61.7,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a bodybuilder flexing on a competition stage under spotlights",
+  "text": []
+ },
+ {
+  "id": "s018",
+  "t": 66.5,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a bodybuilder raising a trophy on stage, crowd silhouettes applauding",
+  "text": []
+ },
+ {
+  "id": "s019",
+  "t": 69.0,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a lean soldier lifting a heavy supply crate onto the back of an old army truck",
+  "text": []
+ },
+ {
+  "id": "s020",
+  "t": 71.6,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a lean soldier carrying full kit along a rocky trail",
+  "text": []
+ },
+ {
+  "id": "s021",
+  "t": 72.7,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a lean soldier dragging a heavy training dummy in uniform by its shoulder straps toward cover behind a low stone wall",
+  "text": []
+ },
+ {
+  "id": "s022",
+  "t": 74.4,
+  "mode": "B",
+  "rook": false,
+  "prompt": "an empty judges' table with blank scorecards and an empty chair, dust, nobody judging",
+  "text": []
+ },
+ {
+  "id": "s023",
+  "t": 77.7,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a heavy crate lifted just off the ground by two hands, motion lines under it",
+  "text": []
+ },
+ {
+  "id": "s024",
+  "t": 79.4,
+  "mode": "D",
+  "rook": false,
+  "prompt": "a human body drawn as a factory blueprint with gears, pulleys and levers inside, copper gears at the joints",
+  "text": []
+ },
+ {
+  "id": "s025",
+  "t": 84.3,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a man in a gym growing bigger, three stages of the same man side by side getting more massive",
+  "text": []
+ },
+ {
+  "id": "s026",
+  "t": 87.0,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a lean man carrying a heavy stone across a long field, far horizon",
+  "text": []
+ },
+ {
+  "id": "s027",
+  "t": 91.1,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook standing full body, introduced, slight smile, plain aged-paper background",
+  "text": [
+   "ROOK \u00b7 68 kg"
+  ]
+ },
+ {
+  "id": "s028",
+  "t": 97.7,
+  "mode": "B",
+  "rook": true,
+  "prompt": "hands giving Rook a backpack while sand pours into it from a shovel, he looks at it with doubt",
+  "text": []
+ },
+ {
+  "id": "s029",
+  "t": 102.5,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook walking on a quiet road wearing a heavy backpack, early morning",
+  "text": [
+   "WEEK 1"
+  ]
+ },
+ {
+  "id": "s030",
+  "t": 104.1,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook walking slowly, tired, rubbing his sore shoulder under the backpack strap",
+  "text": []
+ },
+ {
+  "id": "s031",
+  "t": 106.3,
+  "mode": "D",
+  "rook": false,
+  "prompt": "a human figure with the brain and nerves running down the arm drawn in glowing copper, muscles in plain ink",
+  "text": []
+ },
+ {
+  "id": "s032",
+  "t": 110.3,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a 1970s university laboratory, two researchers in lab coats with old analogue measuring equipment and paper charts, seen from behind",
+  "text": [
+   "Moritani & deVries \u00b7 1979"
+  ]
+ },
+ {
+  "id": "s033",
+  "t": 114.9,
+  "mode": "B",
+  "rook": false,
+  "prompt": "young men and women training with dumbbells in a 1970s gym, wall clock, calendar",
+  "text": [
+   "8 weeks"
+  ]
+ },
+ {
+  "id": "s034",
+  "t": 117.9,
+  "mode": "D",
+  "rook": false,
+  "prompt": "an engraved scientific chart with two smooth curves crossing over time, the early curve copper, the later curve black, blank axis lines",
+  "text": [
+   "Weeks 1\u20135: nervous system"
+  ]
+ },
+ {
+  "id": "s035",
+  "t": 122.3,
+  "mode": "D",
+  "rook": false,
+  "prompt": "a nerve fibre connecting into a muscle, electrical sparks along the nerve drawn in copper",
+  "text": []
+ },
+ {
+  "id": "s036",
+  "t": 126.6,
+  "mode": "B",
+  "rook": false,
+  "prompt": "inside a giant muscle-shaped tunnel, a team of tiny workers in overalls holding a long rope, only a few of them pulling",
+  "text": []
+ },
+ {
+  "id": "s037",
+  "t": 129.0,
+  "mode": "B",
+  "rook": false,
+  "prompt": "tiny workers pulling a rope at different times, some resting, some yanking, chaotic",
+  "text": []
+ },
+ {
+  "id": "s038",
+  "t": 133.9,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a foreman shaped like a brain with a whistle calling more tiny workers to grab the rope",
+  "text": []
+ },
+ {
+  "id": "s039",
+  "t": 137.0,
+  "mode": "B",
+  "rook": false,
+  "prompt": "all the tiny workers pulling the rope together in perfect sync, rope taut, copper rope",
+  "text": []
+ },
+ {
+  "id": "s040",
+  "t": 140.2,
+  "mode": "B",
+  "rook": false,
+  "prompt": "the brain-shaped foreman nodding proudly while the workers stand in a neat line",
+  "text": [
+   "Same team. Better boss."
+  ]
+ },
+ {
+  "id": "s041",
+  "t": 141.6,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook walking briskly with the same backpack, faster stride, motion lines",
+  "text": [
+   "WEEK 3"
+  ]
+ },
+ {
+  "id": "s042",
+  "t": 145.5,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook looking at his arm in a mirror, his arm looks the same as before, he shrugs",
+  "text": []
+ },
+ {
+  "id": "s043",
+  "t": 149.8,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook striding uphill with the heavy backpack, determined",
+  "text": [
+   "WEEK 8"
+  ]
+ },
+ {
+  "id": "s044",
+  "t": 153.6,
+  "mode": "D",
+  "rook": false,
+  "prompt": "muscle fibres seen up close, densely packed and glowing copper, compact not bulky",
+  "text": []
+ },
+ {
+  "id": "s045",
+  "t": 156.1,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook turning his back on a mirror and picking up his backpack",
+  "text": []
+ },
+ {
+  "id": "s046",
+  "t": 159.8,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook marching along a long winding road, a trail of footprints behind him, sun moving across the sky",
+  "text": []
+ },
+ {
+  "id": "s047",
+  "t": 163.1,
+  "mode": "B",
+  "rook": false,
+  "prompt": "an old research journal opening on a desk, magnifying glass, lamp light",
+  "text": []
+ },
+ {
+  "id": "s048",
+  "t": 166.3,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a modern university physiology lab with researchers at microscopes, seen from behind",
+  "text": [
+   "Manchester Metropolitan Univ. \u00b7 2015"
+  ]
+ },
+ {
+  "id": "s049",
+  "t": 171.5,
+  "mode": "D",
+  "rook": false,
+  "prompt": "anatomical diagram of a thigh with a thin needle marking where a tiny muscle sample is taken, clean and clinical, no blood",
+  "text": []
+ },
+ {
+  "id": "s050",
+  "t": 174.8,
+  "mode": "B",
+  "rook": false,
+  "prompt": "three men standing side by side: a huge bodybuilder, a thick powerlifter, and an ordinary untrained man",
+  "text": []
+ },
+ {
+  "id": "s051",
+  "t": 178.3,
+  "mode": "D",
+  "rook": false,
+  "prompt": "a single muscle fibre held between two tiny clamps on a precision test rig",
+  "text": []
+ },
+ {
+  "id": "s052",
+  "t": 182.5,
+  "mode": "D",
+  "rook": false,
+  "prompt": "three muscle fibres side by side, the left one much thicker than the others",
+  "text": []
+ },
+ {
+  "id": "s053",
+  "t": 185.6,
+  "mode": "D",
+  "rook": false,
+  "prompt": "three muscle fibres attached to three force gauges with needles; the thickest fibre's needle barely moves, the others glow copper",
+  "text": []
+ },
+ {
+  "id": "s054",
+  "t": 189.8,
+  "mode": "D",
+  "rook": false,
+  "prompt": "a winners podium with three steps of clearly different heights; the very thick grey muscle fibre stands alone on the LOWEST step at the right, two thinner copper muscle fibres stand on the higher first and second steps",
+  "text": []
+ },
+ {
+  "id": "s055",
+  "t": 192.1,
+  "mode": "D",
+  "rook": false,
+  "prompt": "a bar diagram drawn as three engraved columns, the bodybuilder's column shortest, others tall in copper",
+  "text": [
+   "\u221262% vs power athletes"
+  ]
+ },
+ {
+  "id": "s056",
+  "t": 197.0,
+  "mode": "D",
+  "rook": false,
+  "prompt": "two muscle fibres compared, an ordinary one glowing copper and a thick one dim",
+  "text": [
+   "\u221241% vs untrained men"
+  ]
+ },
+ {
+  "id": "s057",
+  "t": 202.4,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a giant engine with many loose pistons barely moving, steam leaking",
+  "text": []
+ },
+ {
+  "id": "s058",
+  "t": 206.7,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a powerlifter squatting a very heavy barbell next to a bodybuilder squatting a lighter one, both with similar thighs",
+  "text": [
+   "Small study \u00b7 national-level lifters"
+  ]
+ },
+ {
+  "id": "s059",
+  "t": 211.0,
+  "mode": "D",
+  "rook": false,
+  "prompt": "two thigh cross-section diagrams of equal size side by side, dotted measurement lines",
+  "text": []
+ },
+ {
+  "id": "s060",
+  "t": 218.4,
+  "mode": "D",
+  "rook": false,
+  "prompt": "two ropes labelled only by shape (one bulky, one thin) drifting apart on paper",
+  "text": []
+ },
+ {
+  "id": "s061",
+  "t": 224.0,
+  "mode": "B",
+  "rook": false,
+  "prompt": "soldiers carrying sandbags in a line, heavy practical work",
+  "text": [
+   "Heavy \u00b7 practical \u00b7 often"
+  ]
+ },
+ {
+  "id": "s062",
+  "t": 229.2,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a lean man winning an arm wrestle against a huge muscular man, the big man surprised",
+  "text": []
+ },
+ {
+  "id": "s063",
+  "t": 231.4,
+  "mode": "D",
+  "rook": false,
+  "prompt": "a muscle cross-section circle with arrows measuring its thickness, copper",
+  "text": []
+ },
+ {
+  "id": "s064",
+  "t": 236.3,
+  "mode": "D",
+  "rook": false,
+  "prompt": "a small cube and a big cube, the big cube's volume shaded copper, measurement arrows",
+  "text": []
+ },
+ {
+  "id": "s065",
+  "t": 240.5,
+  "mode": "D",
+  "rook": false,
+  "prompt": "a small figure and a big figure, arrows for body weight grow much larger on the big figure than arrows for muscle",
+  "text": []
+ },
+ {
+  "id": "s066",
+  "t": 245.7,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a 1930s weightlifting competition, old-time lifters with moustaches lifting barbells, crowd",
+  "text": [
+   "1937"
+  ]
+ },
+ {
+  "id": "s067",
+  "t": 251.7,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a light, wiry lifter pressing a heavy barbell overhead, crowd amazed",
+  "text": []
+ },
+ {
+  "id": "s068",
+  "t": 261.7,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a soldier packing a large rucksack in barracks, gear laid out on a bunk",
+  "text": []
+ },
+ {
+  "id": "s069",
+  "t": 266.2,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a column of soldiers on an approach march with large rucksacks through hills",
+  "text": [
+   "33 kg \u2248 73 lb \u00b7 ~45% of body weight"
+  ]
+ },
+ {
+  "id": "s070",
+  "t": 273.0,
+  "mode": "B",
+  "rook": false,
+  "prompt": "silhouettes of an infantry patrol crossing dusty mountain terrain with heavy packs",
+  "text": [
+   "46 kg \u2248 101 lb average"
+  ]
+ },
+ {
+  "id": "s071",
+  "t": 277.8,
+  "mode": "D",
+  "rook": false,
+  "prompt": "x-ray style diagram of a soldier carrying a pack: legs, back, core and hands glowing copper",
+  "text": []
+ },
+ {
+  "id": "s072",
+  "t": 284.3,
+  "mode": "D",
+  "rook": false,
+  "prompt": "anatomical diagram of the spine with the deep back muscles highlighted in copper",
+  "text": []
+ },
+ {
+  "id": "s073",
+  "t": 287.9,
+  "mode": "B",
+  "rook": false,
+  "prompt": "close-up of hands tightly gripping rucksack shoulder straps",
+  "text": []
+ },
+ {
+  "id": "s074",
+  "t": 289.8,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a soldier deadlifting a hexagonal trap bar on a testing field, evaluator with clipboard",
+  "text": [
+   "Army Fitness Test \u00b7 since June 2025"
+  ]
+ },
+ {
+  "id": "s075",
+  "t": 297.8,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a soldier dragging a weighted sled backward on a test lane with cones",
+  "text": []
+ },
+ {
+  "id": "s076",
+  "t": 302.2,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a soldier sprinting while carrying two kettlebells, cones on a lane",
+  "text": []
+ },
+ {
+  "id": "s077",
+  "t": 306.9,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a soldier setting down two kettlebells at a line, breathing hard, focused",
+  "text": [
+   "Can you move it?"
+  ]
+ },
+ {
+  "id": "s078",
+  "t": 311.0,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook in a small simple home with a backpack, water containers and a sack ready on the floor",
+  "text": [
+   "THE COPY-IT ROUTINE \u00b7 3\u00d7 a week"
+  ]
+ },
+ {
+  "id": "s079",
+  "t": 320.6,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook putting books and a bag of rice into a backpack",
+  "text": [
+   "1 \u00b7 Backpack walk \u00b7 ~10% body weight \u00b7 20 min"
+  ]
+ },
+ {
+  "id": "s080",
+  "t": 326.6,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook walking down a neighbourhood street wearing the backpack",
+  "text": []
+ },
+ {
+  "id": "s081",
+  "t": 330.6,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a wall calendar with small weights drawn next to each week, a clock beside it",
+  "text": [
+   "+ weight OR + time \u00b7 never both"
+  ]
+ },
+ {
+  "id": "s082",
+  "t": 334.1,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook doing a farmer carry with two heavy water containers, standing tall",
+  "text": [
+   "2 \u00b7 Farmer carry \u00b7 4 \u00d7 30 m"
+  ]
+ },
+ {
+  "id": "s083",
+  "t": 340.6,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook setting the water containers down and resting, hands on hips",
+  "text": []
+ },
+ {
+  "id": "s084",
+  "t": 344.1,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook lifting a heavy sack from the floor with a flat back, hips hinged, feet under it",
+  "text": [
+   "3 \u00b7 Floor lift \u00b7 3 \u00d7 5"
+  ]
+ },
+ {
+  "id": "s085",
+  "t": 349.6,
+  "mode": "D",
+  "rook": true,
+  "prompt": "side-view diagram of Rook lifting a sack with a flat back, dotted line along the straight spine, arrows pushing the floor",
+  "text": []
+ },
+ {
+  "id": "s086",
+  "t": 354.4,
+  "mode": "D",
+  "rook": false,
+  "prompt": "two side-view spine diagrams: one straight with a copper check mark shape, one rounded drawn faint",
+  "text": [
+   "Back never rounds"
+  ]
+ },
+ {
+  "id": "s087",
+  "t": 359.9,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook holding two equal heavy weights at his sides, a large stopwatch beside him",
+  "text": [
+   "THE GRIP TEST"
+  ]
+ },
+ {
+  "id": "s088",
+  "t": 365.6,
+  "mode": "B",
+  "rook": true,
+  "prompt": "close-up of Rook's hands slowly slipping on two handles",
+  "text": []
+ },
+ {
+  "id": "s089",
+  "t": 369.1,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook catching his breath beside a big stopwatch, satisfied",
+  "text": [
+   "Rook: 0:45"
+  ]
+ },
+ {
+  "id": "s090",
+  "t": 372.4,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook writing a number in a notebook next to a calendar with four weeks circled",
+  "text": [
+   "Comment your time \u2b07"
+  ]
+ },
+ {
+  "id": "s091",
+  "t": 378.4,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook reading a stack of research papers at a desk under a lamp",
+  "text": [
+   "Educational content \u00b7 not medical advice"
+  ]
+ },
+ {
+  "id": "s092",
+  "t": 384.6,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook and a lean soldier walking side by side with packs on a road",
+  "text": []
+ },
+ {
+  "id": "s093",
+  "t": 389.2,
+  "mode": "B",
+  "rook": false,
+  "prompt": "a lean soldier lifting a crate, everyday work",
+  "text": []
+ },
+ {
+  "id": "s094",
+  "t": 392.6,
+  "mode": "D",
+  "rook": false,
+  "prompt": "a full human figure with the whole nervous system glowing copper",
+  "text": []
+ },
+ {
+  "id": "s095",
+  "t": 395.1,
+  "mode": "D",
+  "rook": false,
+  "prompt": "dense strong muscle fibres glowing copper",
+  "text": []
+ },
+ {
+  "id": "s096",
+  "t": 397.1,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook walking into a sunset with his backpack, long shadow",
+  "text": []
+ },
+ {
+  "id": "s097",
+  "t": 399.1,
+  "mode": "B",
+  "rook": true,
+  "prompt": "Rook hanging from a pull-up bar with calm focus, copper forearms",
+  "text": [
+   "NEXT: What hanging from a bar every day does"
+  ]
+ }
+]
