@@ -7,6 +7,7 @@ import bbStand from './svg_bb_stand.json';
 import normalGuy from './svg_normal_guy.json';
 
 export const PILOT_LEN = 45.2;
+export const PILOT_SFX_EXPORT = () => SFX;
 
 // ---------------- footage montage (0 - 13s) ----------------
 type Cut = {src: string; from: number; at: number; end: number; scale: number; origin: string; punch?: number[]; bright?: number};
@@ -167,7 +168,7 @@ const SFX: [number, string][] = [
   [39.6, 'paper_slide'], [41.1, 'pencil_short'], [41.44, 'wood_hit'], [41.8, 'tick_tock'], [43.54, 'deep_impact'],
 ];
 
-export const Pilot: React.FC = () => {
+export const Pilot: React.FC<{inFull?: boolean}> = ({inFull}) => {
   const t = useT();
   return (
     <AbsoluteFill style={{background: PAPER}}>
@@ -187,8 +188,7 @@ export const Pilot: React.FC = () => {
       <Sequence from={f(12.5)} durationInFrames={f(1.2)}>
         <PaperWipe at={0} />
       </Sequence>
-      <Grain opacity={t < 12.9 ? 0.55 : 0.3} />
-      <Audio src={staticFile('narration-clean.mp3')} />
+      {inFull ? null : <><Grain opacity={t < 12.9 ? 0.55 : 0.3} /><Audio src={staticFile('narration-clean.mp3')} /></>}
       <Sfx list={SFX} />
     </AbsoluteFill>
   );

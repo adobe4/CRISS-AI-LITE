@@ -208,3 +208,57 @@ export const Sfx: React.FC<{list: [number, string][]; vol?: number}> = ({list, v
     ))}
   </>
 );
+
+// ---------- extra building blocks for the full video ----------
+export const Win: React.FC<{from: number; to: number; children: React.ReactNode}> = ({from, to, children}) => {
+  const t = useT();
+  if (t < from || t > to) return null;
+  return <>{children}</>;
+};
+
+export const WText: React.FC<{lines: string[]; at: number; out: number; x: number; y: number; size?: number; rot?: number}> = ({lines, at, out, x, y, size = 150, rot = -2}) => {
+  const fr = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  if (fr < f(at) || fr > f(out) + 1) return null;
+  const sp = spring({frame: fr - f(at), fps, config: {damping: 12, stiffness: 230, mass: 0.7}});
+  const sc = interpolate(sp, [0, 1], [2.2, 1]);
+  const e1 = Math.max(f(at) + 4, f(out) - 6), e2 = Math.max(e1 + 1, f(out));
+  const o = interpolate(fr, [f(at), f(at) + 3, e1, e2], [0, 1, 1, 0], clamp);
+  return (
+    <div style={{position: 'absolute', left: x, top: y, transform: `translate(-50%, -50%) scale(${sc}) rotate(${rot}deg)`, opacity: o, textAlign: 'center', whiteSpace: 'nowrap'}}>
+      {lines.map((l, i) => (
+        <div key={i} style={{fontFamily, fontWeight: 900, fontSize: size, lineHeight: 0.92, color: INK, letterSpacing: -2, textTransform: 'uppercase',
+          textShadow: `0 0 18px ${PAPER}, 0 0 36px ${PAPER}, 0 0 8px ${PAPER}`}}>{l}</div>
+      ))}
+    </div>
+  );
+};
+
+export const Pop: React.FC<{src: string; at: number; x: number; y: number; h: number; out?: number; rot?: number; sx?: number; sy?: number; bob?: number; spin?: number; drop?: boolean}> = ({src, at, x, y, h, out, rot = 0, sx = 1, sy = 1, bob = 0, spin = 0, drop}) => {
+  const fr = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const t = fr / FPS;
+  if (t < at) return null;
+  const sp = spring({frame: fr - f(at), fps, config: {damping: 11, stiffness: 180, mass: 0.8}});
+  const s = drop ? 1 : interpolate(sp, [0, 1], [0.25, 1]);
+  const yy = drop ? interpolate(sp, [0, 1], [y - 900, y]) : y;
+  const o = out === undefined ? 1 : interpolate(t, [out, out + 0.25], [1, 0], clamp);
+  const r = rot + (drop ? 0 : interpolate(sp, [0, 1], [-14, 0])) + (spin ? (t - at) * spin : 0);
+  const b = bob ? Math.sin((t - at) * bob) * 8 : 0;
+  if (o <= 0) return null;
+  return (
+    <Img src={staticFile(`cut/${src}.png`)} style={{position: 'absolute', height: h, left: x, top: yy + b, opacity: o,
+      transform: `translate(-50%, -100%) scale(${s * sx}, ${s * sy}) rotate(${r}deg)`, transformOrigin: spin ? '50% 50%' : '50% 100%',
+      filter: 'drop-shadow(0 6px 6px rgba(40,30,15,0.22))'}} />
+  );
+};
+
+export const Footages: React.FC<{list: {src: string; from: number; at: number; end: number; scale?: number; origin?: string; bright?: number}[]}> = ({list}) => (
+  <>
+    {list.map((c, i) => (
+      <Sequence key={i} from={f(c.at)} durationInFrames={Math.max(1, f(c.end - c.at))}>
+        <Footage src={c.src} from={c.from} dur={c.end - c.at} scale={c.scale ?? 1.25} origin={c.origin ?? '50% 50%'} bright={c.bright ?? 1.1} />
+      </Sequence>
+    ))}
+  </>
+);
