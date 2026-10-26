@@ -1,0 +1,14 @@
+[
+ {"id":"soldier_walk","ar":"3:4","p":"a lean soldier in field uniform and cap walking to the right, full body side view, carrying an enormous heavy military rucksack on his back, steady determined stride"},
+ {"id":"soldier_stand","ar":"3:4","p":"a lean average-build soldier in field uniform standing relaxed, full body front three-quarter view, hands at his sides, calm face"},
+ {"id":"bb_stand","ar":"3:4","p":"a huge muscular bodybuilder standing in a front double biceps pose, full body, tank top and shorts"},
+ {"id":"bb_bags","ar":"3:4","p":"a huge muscular bodybuilder seen from the side facing right, leaning forward and struggling, sweating heavily, carrying a heavy shopping bag in each hand, one foot raised as if stepping up a stair, full body"},
+ {"id":"dna","ar":"3:4","p":"a vertical DNA double helix model, engraved style"},
+ {"id":"pill","ar":"1:1","p":"a pharmacy pill bottle tipped over with a few capsules spilling out"},
+ {"id":"fibre","ar":"1:1","p":"a cross-section of a human muscle bundle: a large circle filled with many round muscle fibres of different sizes, scientific engraving, clean outlines"},
+ {"id":"magnifier","ar":"1:1","p":"an antique magnifying glass with a wooden handle, tilted 30 degrees"},
+ {"id":"normal_guy","ar":"3:4","p":"an ordinary untrained young man standing casually with hands in pockets, t-shirt and jeans, average body, full body front view"},
+ {"id":"rook_jugs","ar":"3:4","rook":true,"p":"Rook walking to the right carrying a heavy water container in each hand, arms straight, standing tall, full body side view"},
+ {"id":"stopwatch","ar":"1:1","p":"an antique mechanical stopwatch with a blank face showing only tick marks around the edge and NO hands, crown button on top"},
+ {"id":"paper","ar":"16:9","p":"ONLY a sheet of blank aged off-white paper texture filling the entire frame edge to edge, subtle paper fibres and very faint stains, nothing drawn on it. Ignore the white-background and margin instructions for this one; the paper fills the frame"}
+]
