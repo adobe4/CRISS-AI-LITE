@@ -1,9 +1,9 @@
 ---
 name: faceless-motion-video
-description: Make a complete faceless YouTube explainer video in the owner's approved "Real Strength / What If" style. The style uses a stock-footage cold open with hard editing, then a paper world where cut-out woodcut drawings move, draw themselves on, and get crossed out, with big straight words and quiet SFX, rendered with Remotion. Use whenever the user wants a new video for the strength channel, the What If channel or a similar faceless channel; asks for "same process as the soldier video"; sends narration audio for a script; or asks for thumbnails for these channels. Also covers the research, script and thumbnail steps.
+description: Make a complete faceless YouTube explainer video in the owner's approved "Real Strength" style (black ink on cream paper). The style uses a stock-footage cold open with hard editing, then a paper world where cut-out woodcut drawings move, draw themselves on, and get crossed out, with big straight words and quiet SFX, rendered with Remotion. Use whenever the user wants a new video for the strength channel (Real Strength / Rook) or a similar cream-paper faceless channel; asks for "same process as the soldier video"; sends narration audio for a script; or asks for thumbnails for it. For the What If channel (black chalkboard, Milo, Survival Odds) use the separate whatif-chalk-video skill instead. Also covers the research, script and thumbnail steps.
 ---
 
-# Faceless motion video (the approved process)
+# Faceless motion video: Real Strength channel (the approved process)
 
 The first video made this way, "Why Soldiers Are Stronger Than Gym Guys", is in `production/strength-video-01/` (v3 is final). The owner called the result "perfect". Reproduce that quality and follow every rule below. Each rule comes from a correction the owner made.
 
@@ -51,13 +51,6 @@ This installs ffmpeg, faster-whisper, vtracer, scipy and the **system** Roboto B
     - A timeline (Day 1 → Week 3 → Week 8) with the recurring character **Rook**.
     - Named studies (institution and year).
     - A "Copy-It Routine" plus a self-test ending with "comment your score".
-  - **What If channel:**
-    - One character, **Milo**, inside the scenario with a time limit ("X happens and YOU have Y minutes").
-    - Open on a sensory scene.
-    - Plant a detail early that pays off later.
-    - Hope → horror → hope.
-    - A **Survival Odds** meter.
-    - End on a personal question plus a tease of the next episode.
 - **Policy (YouTube, July 2026):**
   - No AI persona giving health, medical, finance or legal advice.
   - Strength = training mechanics only.
@@ -152,9 +145,3 @@ Spot-check frames from the final file, then send it with `SendUserFile`. `*.mp4`
 ## Brain
 FlowMap holds the plans: board 24 "Two New Channels", plus a Brain note "Faceless video process". Update FlowMap after each video with the title, results and lessons.
 
-## What If channel (dark chalk variant), as built in video 1, "The Sun Disappears"
-- **Look:** white chalk lines on a black chalkboard. Generate elements as black ink on white as usual, then run `cutout.py --invert` with `assets/paper-dark.png`. In `kit.tsx` set `INK='#ECE8DE'` and `PAPER='#1d1d1c'`; give footage a soft-light paper overlay at 0.35 and make flashes use INK.
-- **Character:** `assets/milo-sheet.png` (Milo with a backpack). Signature: the big **Survival Odds** meter (top-right, label ≥ 90 px) that counts down with a heartbeat hit.
-- **Never invert pure-black shapes.** A black hole turns white, so draw it in SVG instead (see `examples/WhatIf-Sun.tsx`: BlackHole, StarField, Orbit, Binary, SkyLight, Mercury, Snow, Ocean, Smoke).
-- **Footage:** NASA, NOAA, USGS, NPS and DVIDS clips on Commons are public domain. Crop out chart panels and logos. Graded black and white, the Sun reads white, which keeps the no-orange rule.
-- **Scene timing:** if a key moment lands right at a scene start, start the scene earlier, so the camera pan doesn't eat the moment (that's what happened to "the sky goes out").
