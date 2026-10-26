@@ -151,3 +151,10 @@ Spot-check frames from the final file, then send it with `SendUserFile`. `*.mp4`
 
 ## Brain
 FlowMap holds the plans: board 24 "Two New Channels", plus a Brain note "Faceless video process". Update FlowMap after each video with the title, results and lessons.
+
+## What If channel (dark chalk variant), as built in video 1, "The Sun Disappears"
+- **Look:** white chalk lines on a black chalkboard. Generate elements as black ink on white as usual, then run `cutout.py --invert` with `assets/paper-dark.png`. In `kit.tsx` set `INK='#ECE8DE'` and `PAPER='#1d1d1c'`; give footage a soft-light paper overlay at 0.35 and make flashes use INK.
+- **Character:** `assets/milo-sheet.png` (Milo with a backpack). Signature: the big **Survival Odds** meter (top-right, label ≥ 90 px) that counts down with a heartbeat hit.
+- **Never invert pure-black shapes.** A black hole turns white, so draw it in SVG instead (see `examples/WhatIf-Sun.tsx`: BlackHole, StarField, Orbit, Binary, SkyLight, Mercury, Snow, Ocean, Smoke).
+- **Footage:** NASA, NOAA, USGS, NPS and DVIDS clips on Commons are public domain. Crop out chart panels and logos. Graded black and white, the Sun reads white, which keeps the no-orange rule.
+- **Scene timing:** if a key moment lands right at a scene start, start the scene earlier, so the camera pan doesn't eat the moment (that's what happened to "the sky goes out").
