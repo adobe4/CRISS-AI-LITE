@@ -3,13 +3,7 @@ import {AbsoluteFill, Img, OffthreadVideo, Sequence, Audio, interpolate, spring,
 import {getLength} from '@remotion/paths';
 
 import {continueRender, delayRender} from 'remotion';
-export const fontFamily = 'RobotoBlack';
-if (typeof document !== 'undefined' && !(window as any).__fontLoaded) {
-  (window as any).__fontLoaded = true;
-  const h = delayRender('font', {timeoutInMilliseconds: 180000});
-  const ff = new FontFace('RobotoBlack', `url(${staticFile('roboto900.woff2')}) format('woff2')`, {weight: '900'});
-  ff.load().then((l) => { (document as any).fonts.add(l); continueRender(h); }).catch(() => continueRender(h));
-}
+export const fontFamily = "'Roboto Black', Roboto, sans-serif";
 export const FPS = 30;
 export const INK = '#151311';
 export const PAPER = '#efe8d7';
