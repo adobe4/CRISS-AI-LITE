@@ -38,7 +38,7 @@ Always reuse these so the channel looks identical every time.
 ### 0. Setup (fresh session)
 `bash .claude/skills/faceless-motion-video/scripts/setup_env.sh`
 
-This installs ffmpeg, faster-whisper, vtracer, scipy and the **system** Roboto Black font. The Remotion project is in the scratchpad: `npm init -y` then install the versions printed by the script. Copy `remotion-template/src/kit.tsx` into `src/`. Chromium is pre-installed at `/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell`.
+This installs ffmpeg, faster-whisper, vtracer, scipy and the **system** Roboto Black font. The Remotion project is in the scratchpad: `npm init -y` then install the versions printed by the script. Copy `remotion-template/src/kit.tsx` into `src/`, and run `python3 scripts/make_grain.py public/grain` (the render fails without the grain files). Chromium is pre-installed at `/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell`.
 
 ### 1. Research → idea → script
 - **Idea selection:**

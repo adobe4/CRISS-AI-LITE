@@ -40,7 +40,7 @@ description: Make a complete video for the owner's WHAT IF channel. Each video i
 - 900–1,200 words, about 5.5–8 min.
 
 ## Pipeline (scripts are in `scripts/`)
-0. **Setup:** `bash scripts/setup_env.sh`, then create a Remotion project (`npm i remotion@4.0.300 @remotion/cli@4.0.300 @remotion/paths@4.0.300 react@18.3.1 react-dom@18.3.1`) and copy `remotion-template/src/kit.tsx`. It's already themed: INK `#ECE8DE`, PAPER `#1d1d1c`, footage soft-light overlay at 0.35, flashes in INK.
+0. **Setup:** `bash scripts/setup_env.sh`, then create a Remotion project (`npm i remotion@4.0.300 @remotion/cli@4.0.300 @remotion/paths@4.0.300 react@18.3.1 react-dom@18.3.1`) and copy `remotion-template/src/kit.tsx`, and run `python3 scripts/make_grain.py public/grain` (the render fails without the grain files). It's already themed: INK `#ECE8DE`, PAPER `#1d1d1c`, footage soft-light overlay at 0.35, flashes in INK.
 1. **Narration:** run `python3 scripts/transcribe.py narration.mp3 transcript.json` to get word times. Look for stray lines and cut them (see the strength skill for the ffmpeg cut).
 2. **Elements:** list every prop and pose in a JSON file (`examples/elements-example.json`). Generate them as **black ink on white**:
    ```
