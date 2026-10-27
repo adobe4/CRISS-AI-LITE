@@ -44,7 +44,7 @@ const Odds: React.FC<{at: number; out: number; from: number; to: number}> = ({at
   const slide = interpolate(t, [at, at + 0.5], [60, 0], {...cl, easing: ease});
   const low = v <= 40;
   return (
-    <div style={{position: 'absolute', left: 120, top: 240, width: 720, opacity: o, transform: `translateX(${-slide}px)`}}>
+    <div style={{position: 'absolute', left: 120, bottom: 120, width: 720, opacity: o, transform: `translateX(${-slide}px)`}}>
       <div style={{background: 'rgba(11,10,9,0.82)', padding: '38px 48px 46px', borderLeft: `10px solid ${C.red}`, boxShadow: '0 30px 80px rgba(0,0,0,0.5)'}}>
         <div style={{fontFamily: SANS, fontWeight: 700, fontSize: 46, letterSpacing: 8, color: C.dim, textTransform: 'uppercase'}}>Milo's survival odds</div>
         <div style={{fontFamily: MONO, fontWeight: 700, fontSize: 230, lineHeight: 1, color: low ? C.red : C.white, marginTop: 10}}>{v}%</div>
@@ -110,12 +110,11 @@ const Figure: React.FC<{at: number; out: number; big: React.ReactNode; small: st
 
 /* ---------- chapter card (DAY 1, MONTH 2…) ---------- */
 const Chapter: React.FC<{at: number; label: string; sub: string}> = ({at, label, sub}) => {
-  const t = useT(); const out = at + 2.2; if (t < at || t > out) return null;
+  const t = useT(); const out = at + 1.5; if (t < at || t > out) return null;
   const o = interpolate(t, [at, at + 0.2, out - 0.35, out], [0, 1, 1, 0], cl);
   const w = interpolate(t, [at, at + 0.6], [0, 520], {...cl, easing: ease});
   return (
-    <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', opacity: o, background: 'rgba(11,10,9,0.45)'}}>
-      <div style={{fontFamily: SANS, fontWeight: 700, fontSize: 46, letterSpacing: 14, color: C.dim, textTransform: 'uppercase'}}>{sub}</div>
+    <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', opacity: o, background: C.bg}}>
       <div style={{width: w, height: 6, background: C.red, margin: '22px 0 18px'}} />
       <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 210, letterSpacing: -4, color: C.white, lineHeight: 1}}>{label}</div>
     </AbsoluteFill>
@@ -220,59 +219,19 @@ export const Film: React.FC = () => (
     <Cut a={313.8} b={FILM_LEN}><ShotBlackHole dur={FILM_LEN - 313.8} miloFrom={0.8} /></Cut>
 
     {/* ===== typography ===== */}
-    <Lower kicker="2017 · 130 million light-years away" head="Two dead stars collide" at={45.6} out={49.8} size={100} />
-    <Lower kicker="Telescopes" head="caught the flash" at={50.1} out={51.8} />
-    <Lower kicker="Detectors" head="caught the ripple" at={52.0} out={55.3} />
-    <Figure at={55.7} out={59.0} big="< 2 SECONDS" small="apart" />
-    <Figure at={58.2} out={61.0} big="130,000,000" small="years of travel" y={640} />
-    <Title lines={['Gravity moves at', 'the speed of light.']} at={61.3} out={63.1} size={118} y={480} />
-    <Lower kicker="For 8 minutes" head={<>Earth orbits <Accent>nothing</Accent></>} at={63.6} out={67.6} />
     <Odds at={69.3} out={72.0} from={100} to={100} />
-    <Side lines={['Remember', 'the Moon.']} at={72.3} out={75.6} size={150} />
-    <Lower kicker="Light arrives" head="12:08:20" at={75.8} out={77.9} mono size={170} />
-    <Side lines={['Not slowly.', 'All at once.']} at={79.2} out={81.7} size={130} />
-    <Side lines={['Like a', 'switch.']} at={84.8} out={86.8} size={150} />
-    <Lower kicker="No sunlight" head={<>No <Accent>blue sky</Accent></>} at={91.9} out={94.0} />
-    <Lower kicker="4.5 billion years" head="The pole is gone" at={97.3} out={101.4} />
-    <Figure at={104.3} out={107.0} big="30 KM / SECOND" small="in a straight line" />
-    <Side lines={['Milo feels', 'nothing.']} at={107.2} out={110.5} size={140} />
-    <Lower kicker="The Moon is just" head="a mirror" at={118.9} out={123.9} />
-    <Lower kicker="Then the mirror" head={<>goes <Accent red>blank</Accent></>} at={124.4} out={126.4} />
     <Odds at={126.6} out={130.8} from={100} to={90} />
-    <Title lines={['Stars.', 'At noon.']} at={132.4} out={136.8} size={150} y={540} />
-    <Side kicker="Still shining" lines={['Jupiter']} at={142.7} out={147.6} size={170} />
-    <Side kicker="Last sunlight, reflected" lines={['30–60', 'minutes']} at={148.9} out={156.9} size={170} mono />
-    <Lower kicker="Now it's just" head="Milo, the dark and a clock" at={159.5} out={162.9} size={96} />
     <Chapter at={163.0} label="DAY 1" sub="Sun offline" />
-    <Title lines={['Silence.']} at={167.3} out={172.0} size={170} y={300} />
-    <Title lines={['Forever.']} at={173.8} out={174.7} size={170} y={300} />
-    <Lower kicker="No light" head="No food" at={180.1} out={184.2} size={140} />
-    <Lower kicker="Big old trees" head="could last decades" at={191.8} out={196.8} />
     <Odds at={202.6} out={204.8} from={90} to={70} />
     <Chapter at={204.9} label="DAY 7" sub="Sun offline" />
     <Temp at={210.9} out={219.0} from={15} to={-18} label="Surface average" ramp={3.5} />
-    <Lower kicker="Colder than" head="a freezer" at={217.5} out={219.0} />
-    <Lower kicker="Everywhere" head="even here" at={219.3} out={222.7} size={130} />
     <Odds at={222.9} out={225.0} from={70} to={40} />
     <Chapter at={225.1} label="MONTH 2" sub="Sun offline" />
-    <Lower kicker="Month two" head="The ocean freezes" at={227.4} out={231.2} />
-    <Title lines={['Ice floats.']} at={231.5} out={234.2} size={160} y={250} />
-    <Lower kicker="A lid of ice" head="keeps the deep ocean liquid" at={234.4} out={243.1} size={90} />
-    <Lower kicker="Cracks in the sea floor" head="Hydrothermal vents" at={247.9} out={253.8} size={104} />
-    <Lower kicker="Life down here" head={<>needs <Accent red>no sun</Accent></>} at={254.5} out={260.1} size={130} />
     <Chapter at={260.3} label="YEAR 1" sub="Sun offline" />
     <Temp at={262.4} out={270.0} from={-18} to={-73} label="Surface average" ramp={3.2} />
-    <Lower kicker="Earth is now a" head={<><Accent red>rogue</Accent> planet</>} at={273.2} out={277.5} size={130} />
-    <Lower kicker="Where heat rises" head="from underground" at={282.9} out={288.0} />
-    <Title lines={['Not live well.', 'Survive.']} at={293.5} out={295.5} size={130} y={260} />
     <Odds at={295.6} out={299.3} from={40} to={5} />
-    <Lower kicker="Unless he moved in" head="the first 8 minutes" at={300.2} out={304.2} />
-    <Side kicker="8 minutes. Your move." lines={['Where would', 'you go?']} at={307.2} out={312.0} size={124} />
-    <Lower kicker="Tell me in" head="the comments" at={312.1} out={313.7} />
     <Lower kicker="Next time" head="Into a black hole" at={314.2} out={318.6} size={130} />
-    <Lower kicker="Milo has" head={<Accent red>one hour</Accent>} at={318.7} out={FILM_LEN - 0.2} size={150} />
 
-    <StoryClock />
     <Grain />
 
     {/* ===== sound ===== */}

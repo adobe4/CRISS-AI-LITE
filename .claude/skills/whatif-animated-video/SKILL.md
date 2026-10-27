@@ -21,12 +21,20 @@ The owner's brief for this style: "no real footage, just animated characters… 
   - Teen or young man with dark curly hair.
   - Red zip jacket, cream tee, charcoal trousers, cream sneakers, sage backpack.
   - Painted storybook style. Always pass the sheet as a reference when generating.
-- **Survival Odds:** a red-edged black card on the LEFT, so it never covers Milo. It has the label "Milo's survival odds" (46 px), a 230 px mono % that counts down, and a red bar. Use it 4–6 times, each time the narrator says the odds.
-- **Story clock HUD** (top left): a red blinking dot, "SUN OFFLINE" and a `T+ 6D 11:56:42` mono clock. Between chapters it spins fast through time.
-- **Chapter cards:** DAY 1 / DAY 7 / MONTH 2 / YEAR 1 in 210 px, with a red rule.
+- **Survival Odds:** a red-edged black card at the BOTTOM-LEFT, so it never covers Milo. It has the label "Milo's survival odds" (46 px), a 230 px mono % that counts down, and a red bar. Use it 4–6 times, each time the narrator says the odds.
+- **Chapter cards:** DAY 1 / DAY 7 / MONTH 2 / YEAR 1, a 1.5 s full-black card (210 px with a red rule) between scenes, never over art.
 - **End:** a personal question, then a tease of the next Milo episode.
 
 ## The owner's rules (from feedback; all apply)
+0. **TEXT IS RARE. This is the owner's #1 complaint.** The narration and the pictures tell the story. On screen, allow ONLY:
+   - the Survival Odds card when the odds are spoken
+   - chapter cards
+   - a temperature card for a key number (at most 2)
+   - the end "Next time" tease
+
+   **No captions, no repeating what the narrator says, no titles over scenes.**
+
+   **Nothing in the top-left corner, ever.** No HUD, clock, status labels or logos; this is the #2 complaint.
 1. **No real footage.** Everything is made: painted plates plus 3D plus typography.
 2. **No small words.** Kickers are ≥ 46 px; headlines are 96–230 px.
 3. **Words are always straight**, stay inside the frame, and **never sit on the subject.** On 3D shots, use the camera lens shift (`shift={0.2}` on `Rig`) to push the planet right, and put the words on the left with `Side`. On park shots, Milo sits right, so words and the odds card go left. Check every text moment with stills.
@@ -71,10 +79,10 @@ The owner's brief for this style: "no real footage, just animated characters… 
    - `PlateScene` / `ParkScene` give a Ken Burns camera at plate-pixel focus and zoom, pose patches, flapping birds, sun glare, scrims and a vignette.
    - `ParkScene` adds a cheap canopy sway (a masked transform). **Never use SVG feTurbulence**: it made the render about 3× slower.
    - `Particles` (snow, motes, bubbles) is in `examples/Film.tsx`.
-5. **Typography** (`pro.tsx` plus `examples/Film.tsx`):
+5. **Typography** (use sparingly, see rule 0; `pro.tsx` plus `examples/Film.tsx`):
    - text: `Lower` (kicker plus headline, bottom-left), `Title` (centred), `Side` (left block for subject-right frames), `Figure` (big mono number)
    - meters: `Odds`, `Temp` (card with a thermometer)
-   - structure: `Chapter`, `StoryClock`
+   - structure: `Chapter` (`StoryClock` exists but is rejected; don't use it)
    - Every word enters with a mask reveal; nothing rotates.
 6. **Sound:** narration; `FilmMusic` (loops one track with a crossfade and ducking); `Sfx` list at 0.05; drone beds under the space shots.
 7. **Check:**

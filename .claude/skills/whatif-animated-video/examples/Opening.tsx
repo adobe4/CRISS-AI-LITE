@@ -44,19 +44,7 @@ export const Opening: React.FC<{audio?: boolean}> = ({audio = true}) => {
       <Cut a={35.0} b={OPEN_LEN}><ShotSpacetime vanishAt={1.7} dur={10.3} /></Cut>
 
       {/* ---- typography ---- */}
-      <Lower kicker="Tuesday" head="12:00 PM" at={0.4} out={2.2} mono size={130} />
-      <Lower kicker="Meet" head="Milo" at={4.0} out={7.8} />
-      <Lower kicker="Until anyone notices" head={<Countdown from={8.6} secs={500} />} at={8.6} out={12.9} mono size={170} />
-      <Title lines={['Nothing changes.']} at={11.2} out={12.9} size={130} y={300} />
-      <Lower kicker="Because the Sun is" head={<span style={{color: C.red}}>already gone.</span>} at={16.9} out={19.2} size={140} />
-      <Figure at={21.3} out={25.4} big="150,000,000 KM" small="Sun → Earth" />
-      <Figure at={22.3} out={30.0} big={<TransitTimer start={21.0} dur={5.2} />} small="Light travel time" y={830} />
-      <Lower kicker="Like a letter" head={<>Still <Accent>in the mail</Accent></>} at={33.4} out={35.0} />
-      <Lower kicker="The strange part" head={<>Gravity is <Accent>in the mail too</Accent></>} at={36.7} out={40.4} size={100} />
-      <Title lines={['How fast does', 'gravity travel?']} at={41.0} out={43.9} size={124} y={420} />
-      <Lower kicker="Then, in" head="2017" at={44.2} out={45.3} mono size={170} />
 
-      {audio ? <HudClock from={3.7} map={(tt) => tt - 2.25} until={OPEN_LEN} /> : null}
 
       {/* film finish */}
       <AbsoluteFill style={{pointerEvents: 'none', opacity: 0.22, mixBlendMode: 'overlay'}}>
