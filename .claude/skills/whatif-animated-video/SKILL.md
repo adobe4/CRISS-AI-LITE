@@ -5,6 +5,8 @@ description: Make a complete video for the owner's WHAT IF channel in the approv
 
 # What If channel: animated 2D + 3D video (the approved process)
 
+`PLAYBOOK.md` in this folder is the same process written for ANY AI agent or human editor (no Claude-specific tools). Keep both in sync when rules change.
+
 **First video:** "The Sun Disappears. You Have 8 Minutes Left" (5:24). The full edit is in `examples/Film.tsx` and `examples/Opening.tsx`, and the reusable engine is in `template/src/`. Reproduce that look and process.
 
 **History:** the owner rejected each of these styles, so never go back to them:
@@ -95,6 +97,7 @@ The owner's brief for this style: "no real footage, just animated characters… 
    - The machine has **no system ffmpeg**; use `npx remotion ffmpeg` (it has no `acrossfade`).
 9. **Thumbnails:**
    - 3 options at 16:9 in the painted style: Milo reacting, one striking object (e.g. an empty dashed Sun in a black noon sky) and room for a 2–3 word hook.
+   - The proven prompts (empty sun at noon / split day-frozen / shock close-up) are in `PLAYBOOK.md` §5, and the video 1 results are in `examples/thumbnails/`. Export at 1920×1080 JPG under 2 MB.
    - If the owner says they'll add the text, deliver no-text versions.
    - To change an approved image, edit that exact image.
 10. **Commit** the source (not the mp4s) to `production/whatif-video-NN/`.
