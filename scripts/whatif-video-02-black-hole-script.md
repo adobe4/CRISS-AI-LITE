@@ -10,10 +10,10 @@ The Sun video had no goal for Milo. Things happened *to* him. This episode gives
 - **A goal:** get rescued before then.
 - **Someone who loves him:** his sister **Nia**, a flight controller on the research station Halo. She is trying to save him.
 - **A twist from real physics:** the rescuers can still *see* Milo hanging at the edge, and they think there's still time. But what they see is old, stretched light. He's already gone. This repeats the theme of the Sun video ("what you see is already the past"), so the two episodes feel like one series.
-- **Odds that go up and down:** 12% → 61% (hope) → 4% (Nia has to turn the drone back) → 0% → the last message (hope again).
+- **Odds that go up and down:** 12% → 61% (hope) → 0% (Nia has to turn the drone back, and Milo can't even answer her) → crossing the horizon makes it final → the last message (hope again).
 - **An ending that lands on emotion,** not facts: the last message Milo sends home.
 
-Runtime is about 1,130 words, roughly 7½ minutes.
+Runtime is about 1,260 words, roughly 8 minutes.
 
 ---
 
@@ -23,9 +23,13 @@ Paste everything between the two dashed lines into the voice tool. It has no lab
 
 --------------------------------------------------------------------------------
 
-Milo has one hour left to live. And for the next fifty-nine minutes, he won't feel a thing.
+Milo has one hour before he falls into a black hole. And for the next fifty-nine minutes, he won't feel a thing.
 
-His little research ship drifted too close. He needed his engines to pull away. A moment ago, they died. No engines. No radio, except one emergency channel. And right in front of him is the black hole at the center of our galaxy. Four million times heavier than the Sun.
+Far in the future, Milo is a pilot on a little research ship, orbiting the black hole at the center of our galaxy. Four million times heavier than the Sun.
+
+A few minutes ago, his engines fired to adjust his orbit. And they jammed. By the time they finally died, they had burned away almost all of his sideways speed. And around something this heavy, if you stop moving sideways, there's only one way left to go. Straight down.
+
+No engines. No way to call for help. Just a receiver that can still hear the station, and an emergency beacon that blinks once every second.
 
 He's a hundred and eighty million kilometers away. A little farther than the Earth is from the Sun. That sounds like a lot of room. It isn't.
 
@@ -55,15 +59,15 @@ Minute twenty. The drone is closing in. But Milo is speeding up.
 
 He's now moving at more than twenty thousand kilometers every second. And every minute, faster.
 
-Minute thirty. Nia's voice comes through the emergency channel. She's been running the numbers again. And her voice has changed.
+Minute thirty. Nia's voice comes through the receiver. She's been running the numbers again. And her voice has changed.
 
 Catching up with Milo isn't the problem. The drone will reach him at minute forty-seven. The problem is what comes next. By then, Milo will be moving at a quarter of the speed of light. To save him, the drone would have to stop a whole ship moving that fast, turn it around, and drag it back out. Not even the drone can do that. Not even close.
-
-Milo's odds just dropped to four percent.
 
 And now Nia has to make the worst choice of her life. Keep the drone going, and lose it too. Or turn it back.
 
 She turns it back.
+
+Milo's odds just dropped to zero. And he can't even answer her.
 
 Minute forty. And now the sky starts to break.
 
@@ -75,7 +79,7 @@ And now, the strangest part of this whole story.
 
 Nia is still watching. On her screen, Milo is slowing down.
 
-His ship drifts closer and closer to the edge... but never quite reaches it. His light gets redder. Dimmer. His voice on the radio gets slower and deeper, like a recording running out of battery. To Nia, it looks like her brother is frozen at the edge of the black hole, fading, but still there.
+His ship drifts closer and closer to the edge... but never quite reaches it. His light gets redder. Dimmer. His beacon, that blinked once every second, blinks slower... and slower... like a heartbeat running out. To Nia, it looks like her brother is frozen at the edge of the black hole, fading, but still there.
 
 And part of her wants to believe it. He's right there. He's not even through yet.
 
@@ -89,7 +93,7 @@ Milo crosses the event horizon.
 
 And nothing happens. No wall. No flash. No bump. If he hadn't been watching the clock, he wouldn't know.
 
-But everything has changed. Milo's survival odds? Zero.
+But everything has changed. Until now, at least in theory, a strong enough engine could still have pulled him out. Not anymore. Not with any engine. Not even light gets out from here.
 
 Because inside a black hole, space and time swap places. The center isn't a place in front of him anymore. It's a moment in his future. As certain as tomorrow. Every direction he could turn, every path he could take, leads to the same moment.
 
@@ -97,9 +101,9 @@ And here is the cruelest twist. If his engines came back on right now, and he fi
 
 Milo has about thirty seconds left.
 
-You may have heard that right now, he'd look back and watch the entire future of the universe flash by. He doesn't. When he looks back, he sees the stars, bent and squeezed together, and somewhere among them, the faint dot of the station. The universe is still out there. He just can't ever get back to it.
+You may have heard that right now, he'd look back and watch the entire future of the universe flash by. He doesn't. When he looks back, he sees the stars, bent and squeezed together. Somewhere among them, too small to see, is the station. And Nia. The universe is still out there. He just can't ever get back to it.
 
-So he does the only thing left. He records one last message for Nia.
+He never got to say goodbye. So he does the only thing left. He records one last message for Nia.
 
 It will never leave the black hole. Nobody will ever hear it.
 
@@ -139,7 +143,7 @@ The style rules from `.claude/skills/whatif-animated-video/` apply:
 | Beat | Picture |
 |---|---|
 | Hook, "one hour left" | 3D: a small dead ship tumbling slowly against the black hole shadow and ring; inside the cockpit (painted), Milo in a dark cabin lit by a single red emergency light |
-| Ship lost power | painted cockpit: dead screens, a floating pen, Milo tapping a dead panel |
+| Engines jam, then die | 3D: the ship's engine flaring too long against its orbit, then sputtering out; the ship tipping into a straight dive. Painted cockpit: dead screens, a red blinking beacon light, Milo tapping a dead panel |
 | Four million suns | 3D: Sgr A* wide shot with lensing (reuse `ShotBlackHole`, add the ship as a dot) |
 | Countdown | **Card: 59:30**, counting down in mono (bottom-left) |
 | Odds 12% | odds card |
@@ -149,14 +153,14 @@ The style rules from `.claude/skills/whatif-animated-video/` apply:
 | Spaghettification | 3D or 2D diagram-art: a tiny black hole and a stretched silhouette (stylized, not gory) |
 | "Monsters are the small ones" | 3D: a small fierce black hole next to the huge calm one, for scale |
 | Minute 20/30, speed | 3D: stars streaking; the drone far behind |
-| Nia's voice changes, 4% | Nia close-up; then the odds card |
-| Nia turns the drone back | Nia's hand on the recall control; 3D: the drone braking and turning away while Milo's ship keeps falling |
+| Nia's voice changes | Nia close-up; Milo listening and unable to reply |
+| Nia turns the drone back, 0% | Nia's hand on the recall control; 3D: the drone braking and turning away while Milo's ship keeps falling; odds card at 0% |
 | The sky breaks | 3D: the full lensing shader as the camera approaches: Einstein ring, doubled stars |
 | Back of his own head | stylized 3D: a light path circling the photon sphere back to Milo |
-| Nia watching him slow | **Key scene:** Nia's screen showing Milo's ship frozen at the edge, getting red and dim (a feed effect inside the painted plate); her face |
+| Nia watching him slow | **Key scene:** Nia's screen showing Milo's ship frozen at the edge, its beacon blinking slower and slower, getting red and dim (a feed effect inside the painted plate); her face |
 | Old light | 3D: light pulses leaving the ship, spreading apart as they climb out |
 | Crossing | 3D: the ship slides through the horizon with no effect; a silent pause; a sub impact |
-| Odds 0 | odds card at 0% |
+| No way back, now even in theory | silence; the ship's beacon light blinking once inside the dark |
 | Space and time swap | 3D: every arrow and path curving toward one point (the "future"); minimal |
 | Engines make it worse | Milo's hand hovering over a restart switch, then pulling back |
 | Thirty seconds, looking up | painted: Milo's face lit by a shrinking circle of stars, calm |
@@ -193,7 +197,9 @@ The style rules from `.claude/skills/whatif-animated-video/` apply:
 All numbers were calculated for a free fall from rest toward Sagittarius A*, a non-rotating black hole of 4.3 million solar masses.
 
 - **The black hole:** Sgr A* has about 4.3 million solar masses, at about 26,000 light-years (EHT 2022; GRAVITY collaboration). Its event horizon radius is about 12.7 million km.
-- **Why he falls straight in:** the ship was drifting almost straight toward the black hole with almost no sideways speed, so without engines nothing stops the fall. The timings assume a start from rest. A ship in orbit would not fall in when it lost power. A hovering start was rejected: hovering there would need about 1,760 g of thrust (GM/r² ≈ 17,000 m/s² at 1.2 AU from Sgr A*).
+- **Why he falls straight in:** at 1.2 AU from Sgr A*, a circular orbit moves at about 56,000 km/s (0.19c). Losing power alone would leave the ship orbiting, so the story uses a jammed burn that cancels almost all of its sideways speed. That leaves a nearly radial fall from near-rest, which the timings assume. Hovering was rejected because it would need about 1,760 g. A ship and drone with this much delta-v are clearly far-future tech, which is why the voice text says "far in the future".
+- **Communication:** Milo has a receiver and a beacon but no transmitter. That's why he never says goodbye, why the recorded message matters, and why Nia sees his beacon slow down (gravitational and Doppler redshift of the blink rate).
+- **Seeing the station:** a station about 170 million km away is about 28 magnitudes fainter than the ISS seen from the ground, so it's invisible to the eye. The script says "too small to see".
 - **The fall:** a free fall from rest at 182 million km (1.2 AU, about 14.3 Schwarzschild radii) reaches the horizon in about 59.5 minutes of Milo's own time. He then has about 29 seconds inside.
 - **Speed:** relative to static observers, he moves at about 0.08c at minute 20, 0.25c at minute 47 and 0.77c at minute 59. The script says "twenty thousand km per second" for minute 20, which is about 0.07c.
 - **Tidal stretch:** across a 2 m body it's about 1/10,000 g at the Sgr A* horizon (less than a fridge magnet). For a 10-solar-mass black hole, it already reaches 100 g at about 1,750 km out, far outside its 30 km horizon.
