@@ -167,7 +167,7 @@ export const Film2: React.FC = () => (
 
     {/* ===== sound ===== */}
     <Audio src={staticFile('narration.mp3')} />
-    {/* no music: the owner adds his own */}
+    {/* no music: the owner adds the music */}
     {[[0, 16.6], [92.0, 99.8], [195.1, 235.0], [268.4, 285.3], [292, 343.4], [375.6, 417]].map(([a, b], i) => (
       <Sequence key={i} from={f(a)} durationInFrames={f(b - a)}><Audio src={staticFile('sfx2/space_drone.wav')} volume={0.02} loop /></Sequence>
     ))}

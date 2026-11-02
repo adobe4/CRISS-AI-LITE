@@ -191,4 +191,4 @@ bash scripts/render_film.sh Film OUT.mp4 0 1359 3213 4890 6753 8331 9720
 4. **Image retries:** the image models are often overloaded. Use a retry loop across several models (`production/whatif-video-02/gen_all.py`) and keep building meanwhile.
 5. **No blue:** colour-correct every generated plate to remove blue before use.
 6. **Matching 3D:** 3D has to match the painted world. Black hole with a disc, a dense star field and a bone ship. Animate over painted plates when an object already exists in the paintings.
-7. **Sound (since video 02):** NO music; the owner adds his own. SFX are at 0.025 (2.5%) and drone beds at 0.02. Narration stays at 1.0.
+7. **Sound (since video 02):** NO music; the owner adds the music. SFX are at 0.025 (2.5%) and drone beds at 0.02. Narration stays at 1.0.
