@@ -25,7 +25,7 @@ Paste everything between the two dashed lines into the voice tool. It has no lab
 
 Milo has one hour left to live. And for the next fifty-nine minutes, he won't feel a thing.
 
-His little research ship was hovering in place, its engines holding it steady against the pull. A moment ago, they died. No engines. No radio, except one emergency channel. And right in front of him is the black hole at the center of our galaxy. Four million times heavier than the Sun.
+His little research ship drifted too close. He needed his engines to pull away. A moment ago, they died. No engines. No radio, except one emergency channel. And right in front of him is the black hole at the center of our galaxy. Four million times heavier than the Sun.
 
 He's a hundred and eighty million kilometers away. A little farther than the Earth is from the Sun. That sounds like a lot of room. It isn't.
 
@@ -193,7 +193,7 @@ The style rules from `.claude/skills/whatif-animated-video/` apply:
 All numbers were calculated for a free fall from rest toward Sagittarius A*, a non-rotating black hole of 4.3 million solar masses.
 
 - **The black hole:** Sgr A* has about 4.3 million solar masses, at about 26,000 light-years (EHT 2022; GRAVITY collaboration). Its event horizon radius is about 12.7 million km.
-- **Why he falls straight in:** the ship was hovering on engine thrust (less than 0.02 m/s² is needed at that distance), so when the engines die it drops straight in from rest. A ship that was orbiting would not fall in when it lost power.
+- **Why he falls straight in:** the ship was drifting almost straight toward the black hole with almost no sideways speed, so without engines nothing stops the fall. The timings assume a start from rest. A ship in orbit would not fall in when it lost power. A hovering start was rejected: hovering there would need about 1,760 g of thrust (GM/r² ≈ 17,000 m/s² at 1.2 AU from Sgr A*).
 - **The fall:** a free fall from rest at 182 million km (1.2 AU, about 14.3 Schwarzschild radii) reaches the horizon in about 59.5 minutes of Milo's own time. He then has about 29 seconds inside.
 - **Speed:** relative to static observers, he moves at about 0.08c at minute 20, 0.25c at minute 47 and 0.77c at minute 59. The script says "twenty thousand km per second" for minute 20, which is about 0.07c.
 - **Tidal stretch:** across a 2 m body it's about 1/10,000 g at the Sgr A* horizon (less than a fridge magnet). For a 10-solar-mass black hole, it already reaches 100 g at about 1,750 km out, far outside its 30 km horizon.
