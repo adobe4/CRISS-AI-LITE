@@ -17,7 +17,7 @@ const NumCard: React.FC<{at: number; out: number; label: string; children: React
   return (
     <div style={{position: 'absolute', left: 120, bottom: 120, opacity: o, transform: `translateX(${-slide}px)`}}>
       <div style={{background: 'rgba(11,10,9,0.82)', padding: '34px 48px 40px', borderLeft: `10px solid ${C.red}`, boxShadow: '0 30px 80px rgba(0,0,0,0.5)'}}>
-        <div style={{fontFamily: SANS, fontWeight: 700, fontSize: 46, letterSpacing: 8, color: C.dim, textTransform: 'uppercase', whiteSpace: 'nowrap'}}>{label}</div>
+        <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 84, letterSpacing: 2, color: C.white, textTransform: 'uppercase', whiteSpace: 'nowrap', lineHeight: 1}}>{label}</div>
         <div style={{fontFamily: MONO, fontWeight: 700, fontSize: 200, lineHeight: 1, color: C.white, marginTop: 10, whiteSpace: 'nowrap'}}>{children}</div>
       </div>
     </div>
@@ -97,7 +97,7 @@ export const Film2: React.FC = () => (
     <Cut a={42.8} b={51.0}><ShotBH dur={8.2} rs={[0.085, 0.11]} ctr={[[0.2, 0.05], [0.18, 0.05]]} rot={[0, 0.04]} ship={{from: [-2.8, -1.0, 1], to: [-2.4, -0.95, 1.1], scale: 0.4}} /></Cut>
     <Cut a={51.0} b={61.4}><Plate src={A('cockpit_milo')} dur={10.4} x0={760} z0={1.15} z1={1.32} /></Cut>
     <Cut a={61.4} b={67.9}><ShotBH dur={6.5} rs={[0.2, 0.4]} rot={[0, 0.05]} ring={1.1} /></Cut>
-    <Cut a={67.9} b={71.6}><Plate src={A('cockpit_milo')} dur={3.7} x0={900} z0={1.35} z1={1.45} /></Cut>
+    <Cut a={67.9} b={71.6}><Plate src={A('cockpit_milo')} dur={3.7} x0={900} z0={1.12} z1={1.18} /></Cut>
     <Cut a={71.6} b={75.4}><Plate src={A('station_ext')} dur={3.8} z0={1.0} z1={1.12} /></Cut>
     <Cut a={75.4} b={81.0}><Plate src={A('control_nia')} dur={5.6} z0={1.0} z1={1.12} /></Cut>
     <Cut a={81.0} b={85.6}><Plate src={A('nia_close')} dur={4.6} z0={1.0} z1={1.08} /></Cut>
@@ -119,7 +119,7 @@ export const Film2: React.FC = () => (
     <Cut a={174.5} b={181.3}><Plate src={A('control_nia')} dur={6.8} x0={560} z0={1.25} z1={1.35} /></Cut>
     <Cut a={181.3} b={188.2}><Plate src={A('nia_recall')} dur={6.9} z0={1.0} z1={1.12} /></Cut>
     <Cut a={188.2} b={191.6}><ShotDrone dur={3.4} mode="recall" /></Cut>
-    <Cut a={191.6} b={193.6}><Plate src={A('cockpit_listen')} dur={2} z0={1.2} z1={1.26} /></Cut>
+    <Cut a={191.6} b={193.6}><Plate src={A('cockpit_listen')} dur={2} x0={900} z0={1.06} z1={1.1} /></Cut>
 
     {/* ===== the sky breaks ===== */}
     <Cut a={195.1} b={205.5}><ShotBH dur={10.4} rs={[0.12, 0.22]} rot={[0, 0.07]} ring={1} /></Cut>
@@ -152,10 +152,10 @@ export const Film2: React.FC = () => (
     <Cut a={431.8} b={FILM2_LEN}><Plate src={A('empty_city')} dur={FILM2_LEN - 431.8} z0={1.0} z1={1.1} night={false} /></Cut>
 
     {/* ===== cards (text is rare) ===== */}
-    <NumCard at={55.0} out={61.2} label="Event horizon in"><Countdown start={55.0} from={59 * 60 + 30} /></NumCard>
+    <NumCard at={55.0} out={61.2} label="Horizon in"><Countdown start={55.0} from={59 * 60 + 30} /></NumCard>
     <Odds at={68.9} out={71.5} from={12} to={12} />
     <Odds at={89.0} out={91.9} from={12} to={61} />
-    <NumCard at={146.2} out={151.6} label="Milo's speed">20,000 KM/S</NumCard>
+    <NumCard at={146.2} out={151.6} label="Speed">20,000 KM/S</NumCard>
     <Odds at={189.8} out={193.4} from={61} to={0} />
     <Chapter at={140.6} label="MINUTE 20" sub="" />
     <Chapter at={193.6} label="MINUTE 40" sub="" />

@@ -38,7 +38,7 @@ The owner's brief for this style: "no real footage, just animated characters… 
 
    **Nothing in the top-left corner, ever.** No HUD, clock, status labels or logos; this is the #2 complaint.
 1. **No real footage.** Everything is made: painted plates plus 3D plus typography.
-2. **No small words.** Kickers are ≥ 46 px; headlines are 96–230 px.
+2. **No small words, ever** (repeated by the owner on video 02). Every label is **≥ 84 px, weight 800, full bone colour** (no dim grey): "SURVIVAL ODDS", "HORIZON IN", "SPEED", "NEXT TIME". Numbers are 200–230 px; headlines are 110–210 px. Keep labels to 1–2 words so they never wrap, and keep cards clear of Milo.
 3. **Words are always straight**, stay inside the frame, and **never sit on the subject.** On 3D shots, use the camera lens shift (`shift={0.2}` on `Rig`) to push the planet right, and put the words on the left with `Side`. On park shots, Milo sits right, so words and the odds card go left. Check every text moment with stills.
 4. **SFX at 5% volume. Not stock packs:** the owner hears Mixkit-style SFX as "slop". Use `assets/sfx/`, cut from NASA public-domain mission audio: Quindar tones, sub impact, riser, crackle, drone, whoosh, Geiger. Music sits at about 0.11 and ducks under the big hits.
 5. **Fonts:** Inter (800 for headlines, 700 for kickers) and Roboto Mono 700 for numbers, installed as **system fonts**. Never use `delayRender` for fonts; it stalls the renders.

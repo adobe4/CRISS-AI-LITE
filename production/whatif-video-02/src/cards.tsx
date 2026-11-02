@@ -38,9 +38,9 @@ export const Odds: React.FC<{at: number; out: number; from: number; to: number}>
   const slide = interpolate(t, [at, at + 0.5], [60, 0], {...cl, easing: ease});
   const low = v <= 40;
   return (
-    <div style={{position: 'absolute', left: 120, bottom: 120, width: 720, opacity: o, transform: `translateX(${-slide}px)`}}>
+    <div style={{position: 'absolute', left: 120, bottom: 120, width: 880, opacity: o, transform: `translateX(${-slide}px)`}}>
       <div style={{background: 'rgba(11,10,9,0.82)', padding: '38px 48px 46px', borderLeft: `10px solid ${C.red}`, boxShadow: '0 30px 80px rgba(0,0,0,0.5)'}}>
-        <div style={{fontFamily: SANS, fontWeight: 700, fontSize: 46, letterSpacing: 8, color: C.dim, textTransform: 'uppercase'}}>Milo's survival odds</div>
+        <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 84, letterSpacing: 2, color: C.white, textTransform: 'uppercase', whiteSpace: 'nowrap', lineHeight: 1}}>Survival odds</div>
         <div style={{fontFamily: MONO, fontWeight: 700, fontSize: 230, lineHeight: 1, color: low ? C.red : C.white, marginTop: 10}}>{v}%</div>
         <div style={{height: 22, background: 'rgba(239,233,223,0.16)', marginTop: 26}}>
           <div style={{height: '100%', width: `${v}%`, background: C.red}} />
@@ -59,7 +59,7 @@ export const Temp: React.FC<{at: number; out: number; from: number; to: number; 
   return (
     <div style={{position: 'absolute', right: 120, top: 200, display: 'flex', alignItems: 'center', gap: 44, opacity: o, background: 'rgba(11,10,9,0.82)', padding: '40px 50px', borderRight: `10px solid ${C.red}`, boxShadow: '0 30px 80px rgba(0,0,0,0.5)'}}>
       <div style={{textAlign: 'right'}}>
-        <div style={{fontFamily: SANS, fontWeight: 700, fontSize: 46, letterSpacing: 8, color: C.dim, textTransform: 'uppercase'}}>{label}</div>
+        <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 84, letterSpacing: 2, color: C.white, textTransform: 'uppercase', whiteSpace: 'nowrap', lineHeight: 1}}>{label}</div>
         <div style={{fontFamily: MONO, fontWeight: 700, fontSize: 210, lineHeight: 1, color: C.white}}>{v > 0 ? '+' : v < 0 ? '−' : ''}{Math.abs(v)}°C</div>
       </div>
       <div style={{width: 46, height: 300, borderRadius: 23, border: `5px solid ${C.white}`, position: 'relative', background: 'rgba(11,10,9,0.6)', overflow: 'hidden'}}>
@@ -83,7 +83,7 @@ export const Side: React.FC<{lines: React.ReactNode[]; at: number; out: number; 
     <div style={{position: 'absolute', left: 120, top: 540, transform: 'translateY(-50%)', maxWidth: 820, textShadow: '0 4px 30px rgba(0,0,0,0.7)'}}>
       {kicker ? <div style={{display: 'flex', alignItems: 'center', gap: 18, marginBottom: 14}}>
         <div style={{width: bar, height: 6, background: C.red}} />
-        <SideLine text={kicker} start={f(at) + 3} end={f(out)} style={{whiteSpace: 'nowrap', fontFamily: SANS, fontWeight: 700, fontSize: 46, letterSpacing: 8, color: C.dim, textTransform: 'uppercase'}} />
+        <SideLine text={kicker} start={f(at) + 3} end={f(out)} style={{whiteSpace: 'nowrap', fontFamily: SANS, fontWeight: 800, fontSize: 84, letterSpacing: 2, color: C.white, textTransform: 'uppercase'}} />
       </div> : null}
       {lines.map((l, i) => <SideLine key={i} text={l} start={f(at) + 5 + i * 4} end={f(out)} style={{whiteSpace: 'nowrap', fontFamily: mono ? MONO : SANS, fontWeight: mono ? 700 : 800, fontSize: size, lineHeight: 1.04, letterSpacing: mono ? 0 : -2, color: C.white}} />)}
     </div>
@@ -97,7 +97,7 @@ export const Figure: React.FC<{at: number; out: number; big: React.ReactNode; sm
   return (
     <div style={{position: 'absolute', left: 0, right: 0, top: y, textAlign: 'center', opacity: o, transform: `translateY(${dy}px)`, textShadow: '0 6px 30px rgba(0,0,0,0.75)'}}>
       <div style={{fontFamily: MONO, fontWeight: 700, fontSize: 130, color: C.white, letterSpacing: -1}}>{big}</div>
-      <div style={{fontFamily: SANS, fontWeight: 700, fontSize: 48, letterSpacing: 9, color: C.dim, textTransform: 'uppercase', marginTop: 6}}>{small}</div>
+      <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 84, letterSpacing: 2, color: C.white, textTransform: 'uppercase', marginTop: 6}}>{small}</div>
     </div>
   );
 };

@@ -81,7 +81,7 @@ export const Lower: React.FC<{kicker: string; head: React.ReactNode; at: number;
     <div style={{position: 'absolute', left: 120, bottom: 120, textShadow: '0 4px 28px rgba(0,0,0,0.8)'}}>
       <div style={{display: 'flex', alignItems: 'center', gap: 18, marginBottom: 10}}>
         <div style={{width: bar, height: 6, background: C.white}} />
-        <Line text={kicker} start={f(at) + 3} end={f(out)} style={{fontFamily: SANS, fontWeight: 700, fontSize: 46, letterSpacing: 8, color: C.dim, textTransform: 'uppercase'}} />
+        <Line text={kicker} start={f(at) + 3} end={f(out)} style={{fontFamily: SANS, fontWeight: 800, fontSize: 84, letterSpacing: 2, color: C.white, textTransform: 'uppercase', whiteSpace: 'nowrap'}} />
       </div>
       <Line text={head} start={f(at) + 6} end={f(out)} style={{fontFamily: mono ? MONO : SANS, fontWeight: mono ? 700 : 800, fontSize: size, letterSpacing: mono ? 0 : -1.5, color: C.white, lineHeight: 1.05}} />
     </div>

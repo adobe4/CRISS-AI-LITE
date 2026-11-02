@@ -38,7 +38,7 @@ The finished reference video is "The Sun Disappears. You Have 8 Minutes Left" (5
 ## 2. The owner's rules (non-negotiable; each one came from a rejection)
 1. **Too much text is the #1 complaint.** Never caption the narration and never repeat what the voice says. If you aren't sure whether a text belongs, leave it out.
 2. **Nothing in the top-left corner, ever.** No clocks, "LIVE"/status labels, HUDs or logos.
-3. No small words. Labels are ≥ 46 px at 1080p; numbers 130–230 px.
+3. No small words (the owner has repeated this): labels are ≥ 84 px, weight 800 and full bone colour at 1080p; numbers 200–230 px. Labels are 1–2 words, they never wrap, and cards never touch Milo.
 4. Words are perfectly straight (no rotation, no bouncy "thrown" text), stay inside the frame and **never cover the subject** (Milo, a planet). On 3D shots, push the planet right with the lens shift and put any card on the left. On park shots Milo sits right, so cards go bottom-left.
 5. No "AI slop" colours (blue, light blue, orange, neon gradients) and no common stock SFX packs (Mixkit-style whooshes and dings).
 6. Not a slideshow: every shot moves (camera, character, particles, light).
