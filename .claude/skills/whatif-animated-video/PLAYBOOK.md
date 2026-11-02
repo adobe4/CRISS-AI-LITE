@@ -183,3 +183,11 @@ bash scripts/render_film.sh Film OUT.mp4 0 1359 3213 4890 6753 8331 9720
 - Send the mp4 (H.264 + AAC, 1080p30) and the 3 thumbnails.
 - Commit the sources (`src/`, plates) to `production/whatif-video-NN/` and never the mp4s or keys.
 - Then record what the owner liked or rejected in this file, so the next video starts smarter.
+
+## 7. Lessons from video 02 (read before starting)
+1. **Story:** Milo needs a goal, a clock and someone who cares (his sister Nia, `assets/nia-sheet.png`).
+2. **Script review:** review the script for physics and story logic three times before the owner records it. Check whether the situation itself can happen, not only each sentence.
+3. **Recording check:** transcribe the recording and diff it against the script. The voice tool can drop lines or add sounds. Fix glitches by silencing them, never by cutting time.
+4. **Image retries:** the image models are often overloaded. Use a retry loop across several models (`production/whatif-video-02/gen_all.py`) and keep building meanwhile.
+5. **No blue:** colour-correct every generated plate to remove blue before use.
+6. **Matching 3D:** 3D has to match the painted world. Black hole with a disc, a dense star field and a bone ship. Animate over painted plates when an object already exists in the paintings.

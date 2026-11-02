@@ -101,3 +101,17 @@ The owner's brief for this style: "no real footage, just animated characters… 
    - If the owner says they'll add the text, deliver no-text versions.
    - To change an approved image, edit that exact image.
 10. **Commit** the source (not the mp4s) to `production/whatif-video-NN/`.
+
+## Lessons from video 02 (black hole, Nov 2026); also in PLAYBOOK §7
+- **Story:** give Milo a goal, someone who loves him and a clock (video 02 has his sister **Nia**, `assets/nia-sheet.png`, and a rescue). The owner asked for a better story after video 01. **Review the script three times for physics and plot logic, not just wording.** The owner caught issues twice before recording.
+- **Check the recorded voice before editing:** transcribe it and compare it line by line with the script. MiniMax dropped the final tease lines and added a "day" after "Sun". Silence glitches with a volume expression; never shift the timing.
+- **Image generation:** Google image models often return 503 ("high demand"). Use `production/whatif-video-02/gen_all.py`: it retries every job across `gemini-nano-banana-2.1`, `gemini-3.1-flash-image`, `gemini-2.5-flash-image` and `gemini-3-pro-image` until they succeed, and orders edits after their base plates. Run it detached and build the 3D meanwhile.
+- **No blue:** generated plates still drift blue (screens, starfields). Always run the de-blue grade (HSV: drain saturation where hue is 85–135 on OpenCV's 0–180 scale) before using a plate.
+- **3D must match the painted look:** give the black hole a disc and a dense star field, and keep the ship hull bone, not stripes. If a 3D object would sit next to a painted one (the station), animate over the painted plate instead (see `DroneStreak`).
+- **New reusable code** in `production/whatif-video-02/src/`:
+  - `bh.tsx`:
+    - `BHSkyMesh` (lensing sky)
+    - shots: `ShotBH`, `ShotBurn`, `ShotOrbitDrop`, `ShotSpeed`, `ShotDrone`, `ShotPhotonSphere`, `ShotOldLight`, `ShotFuture`, `ShotSpaghetti`
+    - objects: `Ship`, `Drone`, `Station`
+  - `cards.tsx`: `NumCard`-style cards, `LoopMusic`.
+- **Environment:** the headless shell is at `/opt/pw-browsers/chromium_headless_shell-*/chrome-headless-shell-linux64/chrome-headless-shell`. System ffmpeg may exist; check `which ffmpeg`.
