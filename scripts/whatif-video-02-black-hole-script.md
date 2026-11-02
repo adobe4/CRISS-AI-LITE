@@ -25,7 +25,7 @@ Paste everything between the two dashed lines into the voice tool. It has no lab
 
 Milo has one hour left to live. And for the next fifty-nine minutes, he won't feel a thing.
 
-His little research ship lost power forty seconds ago. No engines. No radio, except one emergency channel. And right in front of him is the black hole at the center of our galaxy. Four million times heavier than the Sun.
+His little research ship was hovering in place, its engines holding it steady against the pull. A moment ago, they died. No engines. No radio, except one emergency channel. And right in front of him is the black hole at the center of our galaxy. Four million times heavier than the Sun.
 
 He's a hundred and eighty million kilometers away. A little farther than the Earth is from the Sun. That sounds like a lot of room. It isn't.
 
@@ -43,7 +43,7 @@ Nia launches it.
 
 Milo's odds just jumped to sixty-one percent.
 
-Now here's the first thing that surprises everyone. Milo is falling toward the most powerful object in the galaxy, and he feels... nothing. No pull, no pressure. He floats in his seat like an astronaut. Because when you fall freely, gravity is silent. Your body and your ship fall together.
+Now here's the first thing that surprises everyone. Milo is falling toward the heaviest thing in our entire galaxy, and he feels... nothing. No pull, no pressure. He floats in his seat like an astronaut. Because when you fall freely, gravity is silent. Your body and your ship fall together.
 
 And he's lucky in another way. If this were a small black hole, one just ten times heavier than the Sun, Milo would never make it to the edge alive. Long before he reached it, the pull on his feet would be so much stronger than the pull on his head that he'd be stretched thin, like spaghetti. Scientists literally call it spaghettification.
 
@@ -67,7 +67,7 @@ She turns it back.
 
 Minute forty. And now the sky starts to break.
 
-The black hole itself is invisible. It's a hole. A perfect circle of nothing. But around it, light from the stars behind is being bent. Pulled around the black hole like water around a drain. Stars that should be hidden appear twice. A whole ring of light wraps around the dark circle.
+The black hole itself is invisible. It's a hole. A perfect circle of nothing. But around it, light from the stars behind is being bent. Warped around the black hole, like the world seen through the bottom of a glass. Stars that should be hidden appear twice. A whole ring of light wraps around the dark circle.
 
 At minute fifty-nine, Milo flies through a place where gravity is so strong that light itself can go around in circles. Anyone who could stop and hover right there, and look straight to the side, could in theory see light that went all the way around the black hole. They could see the back of their own head.
 
@@ -97,7 +97,7 @@ And here is the cruelest twist. If his engines came back on right now, and he fi
 
 Milo has about thirty seconds left.
 
-Movies say that right now, he'd look back and watch the entire future of the universe flash by. He doesn't. When he looks back, he sees the stars, bent and squeezed together, and somewhere among them, the faint dot of the station. The universe is still out there. He just can't ever get back to it.
+You may have heard that right now, he'd look back and watch the entire future of the universe flash by. He doesn't. When he looks back, he sees the stars, bent and squeezed together, and somewhere among them, the faint dot of the station. The universe is still out there. He just can't ever get back to it.
 
 So he does the only thing left. He records one last message for Nia.
 
@@ -107,7 +107,7 @@ Then, in the final fraction of a second, the stretching he escaped at the edge f
 
 Or... is he?
 
-Stephen Hawking predicted that black holes are not forever. Very, very slowly, they leak away. This one would take a number of years with eighty-seven zeros after it. Far longer than the stars will burn.
+Stephen Hawking predicted that black holes are not forever. Very, very slowly, they leak away. This one would take roughly a one followed by eighty-seven zeros, in years. Far longer than the stars will burn.
 
 And some physicists think that when a black hole finally disappears, everything that ever fell in leaves a trace. Scrambled beyond recognition. But not erased. Not completely.
 
@@ -193,14 +193,16 @@ The style rules from `.claude/skills/whatif-animated-video/` apply:
 All numbers were calculated for a free fall from rest toward Sagittarius A*, a non-rotating black hole of 4.3 million solar masses.
 
 - **The black hole:** Sgr A* has about 4.3 million solar masses, at about 26,000 light-years (EHT 2022; GRAVITY collaboration). Its event horizon radius is about 12.7 million km.
+- **Why he falls straight in:** the ship was hovering on engine thrust (less than 0.02 m/s² is needed at that distance), so when the engines die it drops straight in from rest. A ship that was orbiting would not fall in when it lost power.
 - **The fall:** a free fall from rest at 182 million km (1.2 AU, about 14.3 Schwarzschild radii) reaches the horizon in about 59.5 minutes of Milo's own time. He then has about 29 seconds inside.
 - **Speed:** relative to static observers, he moves at about 0.08c at minute 20, 0.25c at minute 47 and 0.77c at minute 59. The script says "twenty thousand km per second" for minute 20, which is about 0.07c.
 - **Tidal stretch:** across a 2 m body it's about 1/10,000 g at the Sgr A* horizon (less than a fridge magnet). For a 10-solar-mass black hole, it already reaches 100 g at about 1,750 km out, far outside its 30 km horizon.
 - **Photon sphere:** at 1.5 times the Schwarzschild radius, which Milo reaches at about minute 59.1; light can orbit there. Seeing the back of your head applies to an observer hovering there, so the script says "anyone who could stop and hover".
 - **The outside view:** distant observers see the infaller redshift, dim and appear to freeze at the horizon. In practice the image fades out within minutes for Sgr A* (the redshift grows exponentially on a timescale of about the light-crossing time). The infaller crosses in finite proper time.
 - **Inside:** r becomes timelike, so the singularity lies in the future. Hard thrust outward shortens the remaining proper time (Lewis & Kwan 2007, "No Way Back"). A small, precisely tuned burn can add a few seconds, so the script only claims that firing "as hard as he could" makes it worse.
+- **The lensing analogy:** the bottom of a glass is a lens, which is a fair picture of lensing. The old "water around a drain" analogy suggested swirling, which is wrong for light bending.
 - **The "see the whole future of the universe" myth:** this is false for a Schwarzschild black hole (Hamilton, JILA visualizations).
-- **Hawking evaporation:** t ≈ 2×10⁶⁷ yr × (M/M☉)³, which is about 10⁸⁷ years for Sgr A*. The information paradox is unresolved, so the script says "some physicists think".
+- **Hawking evaporation:** t ≈ 2×10⁶⁷ yr × (M/M☉)³, which is about 1.6×10⁸⁷ years for Sgr A* ("roughly a one followed by eighty-seven zeros"). It ignores the cosmic background: the black hole can't start shrinking until the universe is colder than it is. The information paradox is unresolved, so the script says "some physicists think".
 - **Rescue logic:** the drone has to cover about 87 million km in about 44 minutes (about 0.1c, so it's clearly future tech). Matching and reversing a ship at 0.25c deep in the well needs far more. That's why the script says catching up isn't the problem.
 - **Story elements:** the station, the drone and Nia are fiction. The description should say "a science thought experiment".
 
