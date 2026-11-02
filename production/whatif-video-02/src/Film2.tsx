@@ -2,7 +2,7 @@
 import React from 'react';
 import {AbsoluteFill, Audio, Sequence, interpolate, random, staticFile, useCurrentFrame, Easing} from 'remotion';
 import {ShotBH, ShotBurn, ShotOrbitDrop, ShotSpeed, ShotDrone, ShotPhotonSphere, ShotOldLight, ShotFuture, ShotSpaghetti} from './bh';
-import {Plate, Odds, Chapter, Grain, Cut, LoopMusic} from './cards';
+import {Plate, Odds, Chapter, Grain, Cut} from './cards';
 import {C, MONO, SANS, f, useT, Sfx, Lower} from './pro';
 
 export const FILM2_LEN = 438;
@@ -167,12 +167,11 @@ export const Film2: React.FC = () => (
 
     {/* ===== sound ===== */}
     <Audio src={staticFile('narration.mp3')} />
-    <LoopMusic src="music.mp3" len={229.85} total={FILM2_LEN} loops={[[0, 0], [212, 40]]} vol={0.11}
-      duck={[[32.0, 33.6], [61.4, 63.0], [189.8, 191.4], [283.0, 292.0], [373.6, 380.0]]} />
+    {/* no music: the owner adds his own */}
     {[[0, 16.6], [92.0, 99.8], [195.1, 235.0], [268.4, 285.3], [292, 343.4], [375.6, 417]].map(([a, b], i) => (
-      <Sequence key={i} from={f(a)} durationInFrames={f(b - a)}><Audio src={staticFile('sfx2/space_drone.wav')} volume={0.05} loop /></Sequence>
+      <Sequence key={i} from={f(a)} durationInFrames={f(b - a)}><Audio src={staticFile('sfx2/space_drone.wav')} volume={0.02} loop /></Sequence>
     ))}
-    <Sfx list={[
+    <Sfx vol={0.025} list={[
       [0.2, 'riser'], [17.3, 'crackle'], [22.4, 'sub_impact'], [32.1, 'sub_impact'], [40.1, 'quindar_in'],
       [61.6, 'sub_impact'], [69.0, 'geiger'], [86.8, 'whoosh_real'], [89.2, 'geiger'],
       [125.6, 'crackle'], [140.6, 'quindar_in'], [154.6, 'quindar_in'], [188.4, 'whoosh_real'], [190.0, 'geiger'],
