@@ -47,33 +47,31 @@ The settings phrases have little search volume ("samsung tv best settings": unde
 4. **Fixes:** no sound, remote not working, black screen.
 5. **TV news, weekly:** price rises, new services, Roku and Google TV changes. This is what builds a fanbase (the Cord Cutters News model).
 
-## First 10 videos
-1. **Your TV Has Free Channels You've Never Found. Here's Where They Are**
-   - Covers Samsung TV Plus, LG Channels, The Roku Channel, Google TV free channels, Pluto TV and Tubi.
-   - Proof: Stan Novak got 346K, and "free tv channels" has 7.9K searches a month.
-2. **Why Your 4K TV Doesn't Look Like 4K (The Setting the Store Left On)**
-   - Covers Vivid or store mode, motion smoothing (the "soap opera effect") and the Filmmaker/Movie mode.
-   - Proof: two small channels reached 614K and 138K.
-3. **Bought a New TV? Change These 7 Settings Before You Watch Anything**
-   - Proof: ClearBuy 248K, and the Roku settings video 917K.
-4. **Your Smart TV Is Watching What You Watch. Turn This Off**
-   - Covers ACR (automatic content recognition) per brand: Samsung "Viewing Information Services", LG "Live Plus", Vizio "Viewing Data", Roku "Use info from TV inputs".
-   - Proof: "smart tv privacy" has 4.2K searches a month. Exact menu names get checked against the current menus before scripting.
-5. **Black Friday TV Deals: How to Spot the Trap Models** (time it before Black Friday on Nov 27)
-   - Covers "derivative" models built just for sales, model-number tricks, and what to check.
-   - Proof: TV-buying videos on small channels get 46K–446K.
-6. **Roku vs Fire Stick vs Google TV: Which Is EASIEST to Use?**
-   - The older-viewer angle: easiest wins, not most powerful. "google tv" has 30.8K searches, up 65%.
-7. **Cancel Cable Without Losing Your Local Channels**
-   - Covers an antenna, local apps and live TV services.
-   - Proof: Scott Hylton's two "locals" videos got 58K and 21K.
-8. **You're Using YouTube on Your TV Wrong: 7 Features to Turn On**
-   - Proof: Stan Novak 195K, and "youtube on tv" has 6.7K searches a month.
-9. **Old TV? Make It Smart for About $30**
-   - Covers a streaming stick plus setup, start to finish.
-   - Proof: Lando Tech 29K. The price gets checked at script time.
-10. **Streaming Prices Keep Going Up: What to Keep, What to Cut**
-    - A money and news hybrid. It opens the weekly news series.
+## First 10 videos (v2: searched topics first, watched on the TV screen)
+Two filters:
+1. **People search it:** real US search volume and competition you can beat.
+2. **It's watched ON a TV:** the viewer is sitting at their TV, the TV works, and they open YouTube right there. Fixes for a broken TV, a lost remote or phone mirroring get watched on **phones**, so those are moved to "later".
+
+All 10 are long videos (8–12 min). No Shorts, because Shorts are phone traffic.
+
+| # | Title | Search proof (US/mo · competition) | Why it's a TV-screen video |
+|---|---|---|---|
+| 01 | Your TV Has Free Channels You've Never Found. Here's Where They Are | free tv channels 7,885 · 36; live tv channels 13,169 · 39 (plus 346K views on a 5.7K channel) | They're on the TV, looking for something to watch |
+| 02 | New Fire Stick? Change These 10 Settings First | firestick 78,232 (**+56%**); amazon firestick 5,595 · 39 | Watched in the YouTube app on the Fire TV itself |
+| 03 | New Roku? Change These Settings First | Roku settings videos: 917K, 465K, 261K views | Watched on the Roku itself |
+| 04 | You're Using YouTube on Your TV Wrong: 7 Settings to Change | youtube on tv 6,749 · 45 (plus 195K on a 5.7K channel) | By definition |
+| 05 | Antenna TV: How to Get Free Local Channels (Setup + Which Antenna) | antenna tv 9,065 · 31 (**+86%**); best tv antenna 3,725 · **20** | Lean-back planning on the TV |
+| 06 | How to Watch Live TV Without Cable (Beginner's Guide) | live tv channels 13,169 · 39; free live tv 8,462 · 45; cord cutting 3,661 · 35 | Lean-back explainer |
+| 07 | New Samsung TV? Change These Settings First | samsung smart tv 17,563 · 51 (plus 248K for "new TV, do these first") | Watched on the new TV |
+| 08 | New LG TV? Change These Settings First | lg smart tv 8,678 · 58 (**+90%**) | Watched on the new TV |
+| 09 | Google TV: Complete Beginner's Guide | google tv 30,762 · 62 (**+65%**) | Watched on the Google TV |
+| 10 | Why Your TV Picture Looks Wrong (The Store Setting to Turn Off) | proven on browse: 614K and 138K on small channels | They notice the picture while watching |
+
+**Later (searched, but watched on phones):** these can become Shorts or a second wave once the channel has subscribers.
+- Screen mirroring: iphone to tv 17,251 · 46; android to tv 6,142 · 33.
+- Roku remote not working: 8,411 · 38.
+- TV no sound: lg tv no sound 3,155 · 31.
+- HDMI no signal.
 
 ## Rules for this channel
 - **100% legal:** no IPTV, no "jailbreak", no "free movies" apps. That content stays on Blonxin.
