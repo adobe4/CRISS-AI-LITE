@@ -59,6 +59,12 @@ This angle is filling up fast: a new tutorial appears every day.
 2. **Every week, a long-form compilation** (15–25 min) of our own 8–12 stories. Title: "In This Town… Roblox Stories Compilation (#1)". This targets 235K monthly searches at competition 27.
 3. **Later:** a tutorial video, "How I make In This Town stories with Claude", on the same channel or a second one, for the better-paying adult audience.
 
+## Weekly posting rhythm (one channel, Shorts and long videos together)
+- **Shorts every day.** Each Short links to the latest compilation through YouTube's "related video" setting, which puts a tap-through link under the Short.
+- **One compilation a week:** 15–25 min made from that week's Shorts, with #1, #2… in the title. Its thumbnail uses the best-performing Short's moment.
+- **Same channel, same characters,** so the people who subscribe from the Shorts are the same people who get the compilations. That's how the original-story channels (Custerk Blox, Gelo Stories) do it.
+- **When a Short does very well,** make a "Part 2" within 48 hours.
+
 ## Story premises to start (one rule, one twist)
 1. In This Town, Birthdays Make You Younger
 2. In This Town, Your Shadow Leaves at Midnight
