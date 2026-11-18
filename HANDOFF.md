@@ -1,163 +1,208 @@
-# HANDOFF: YouTube channels production (read this first)
+# HANDOFF: "In This Town" YouTube channel. Long-form money, mainly from search
 
-This file hands work over from a cloud session (last updated Nov 18, 2026) to a new local session. It has everything you need to continue without the old chat.
+This file comes from a cloud research session (Nov 18, 2026). It covers **only** the new "In This Town" idea: what we learned, the data, and what the new session should do.
 
-> **Starting prompt for the new session** (the owner pastes this):
-> "Read HANDOFF.md in this repo and follow it. Then continue the current priority."
-
----
-
-## 0. Instructions for the new agent (follow in order)
-1. Check out the work branch and pull:
-   `git fetch origin claude/youtube-strategy-content-plan-sqgmdm && git checkout claude/youtube-strategy-content-plan-sqgmdm && git pull`
-2. Read, in this order:
-   1. this file
-   2. `production/in-this-town/hit-formula.md`
-   3. `production/in-this-town/research.md`
-   4. `scripts/in-this-town-01-lying-turns-you-grey.md`
-3. Read the owner's standing rules (section 2). They are not optional; the owner gets angry when they're broken.
-4. Continue **section 4: Current priority**.
-5. Don't push to any other branch. Commit when a piece of work is done. Never commit secrets (section 3). Don't put AI model names in commits, files or anything published.
-
-The repo itself is the owner's WhatsApp bot (`index.js`, `lib/`, `plugins/`...). **Don't touch the bot code.** All YouTube work lives in `production/`, `scripts/`, `.claude/skills/` and this file.
+> **Starting prompt** (the owner pastes this into the new session):
+> "Read HANDOFF.md and follow it."
 
 ---
 
-## 1. Who the owner is and their channels
-| Channel | Language / topic | Status |
+## 0. The owner's goal (in their words, summarised)
+- **Make money from YouTube long-form videos**, not from Shorts. Most creators in this trend post on Instagram Reels and YouTube Shorts, so long-form YouTube is less crowded.
+- **Get viewers mainly from YouTube search.** Use Shorts only to pull some of the same viewers in.
+- **The owner wants evidence and "guarantee hits".** Always show data. Be honest that nothing is guaranteed, but pick what the data says works.
+
+---
+
+## 1. What the trend is
+- **Format:** short 3D animated stories with blocky Roblox-style characters.
+- **Every story starts from one strange rule:** "In this town, everyone only gets 1,000,000 steps", "…lying turns you grey", "…something knocks after midnight and copies your voice".
+- **Sister trend:** "In this world…".
+- **How creators make them:** with Claude, which writes the story and builds the scenes.
+- **Top creators:**
+  - Gneef (2.19M subs): **28M–36M views per Short**.
+  - R6Rants (169K): 6.7M.
+  - Akira's Diary: 2–3.6M.
+  - Ryex, Gelo Stories, Revan, BloxyRiddles, KELNI: 5M–17M each.
+
+---
+
+## 2. The search data (vidIQ, worldwide, per month). This is the core of the plan
+Competition runs 0–100, and **lower is easier**. Two long-form search goldmines came out of the research.
+
+### Track A: story compilations (long videos of OUR OWN stories)
+| Search phrase | Searches/mo | Competition | Growth |
+|---|---|---|---|
+| **in this town roblox compilation** | **235,305** | **27** | **+1,051%** (US 36%) |
+| **roblox in this town** | **182,693** | **25** | +620% |
+| in this town roblox story | 36,605 | 40 | n/a |
+| in this town compilation | 33,818 | 25 | n/a |
+| roblox stories in this town | 33,778 | 34 | n/a |
+| in this town roblox stories | 24,195 | 38 | n/a |
+| in this world / in this town roblox story animation compilation | 21,753 | 42 | n/a |
+| roblox story compilation | 61,565 | 33 | +45% |
+| roblox compilation | 70,543 | 33 | +60% |
+| *Wider:* roblox story 1.71M (comp 41), roblox stories 603K (43), in this world roblox 275K (45), in this town 1.55M (61, +715%) | | | |
+
+### Track B: "how to make In This Town videos" tutorials (adult audience, so ads pay more)
+| Search phrase | Searches/mo | Competition | Growth |
+|---|---|---|---|
+| **how to make in this town videos** | **232,036** | **22** | **+2,738%** |
+| in this town roblox tutorial | 53,781 | 25 | n/a |
+| how to make in this town video | 45,929 | 40 | n/a |
+| in this town how to make | 45,849 | 35 | n/a |
+| **how to make in this town videos with claude** | **32,360** | **22** | n/a |
+| how to make roblox in this town videos | 32,155 | 28 | n/a |
+| how to create in this town videos | 25,845 | 22 | n/a |
+| how to make in this town roblox videos | 25,072 | 25 | n/a |
+| **in this town claude** | **22,116** | **21** | n/a |
+| in this town voice | 22,426 | 47 | n/a |
+| in this town background music | 21,711 | 33 | n/a |
+| how to make in this town shorts | 19,372 | 21 | n/a |
+| roblox in this town claude · claude in this town | 14,362 · 14,116 | 25 · 21 | n/a |
+
+**Why Track B matters:**
+- Tutorial viewers are adult creators. That means higher ad pay, no "made for kids" problem, and long watch time.
+- It's pure search traffic, and competition is very low (21–28).
+
+---
+
+## 3. Proof that small channels earn long-form views here
+### Track A: compilations (all from the last 3 weeks)
+| Channel (subs) | Video (length) | Views |
 |---|---|---|
-| **Vinei TV** | Swahili tech | Running |
-| **Blonxin** | English IPTV / streaming. 9.17K subs. Hits: "Ultimate Guide to Streaming in 2026" (146K), "…Streaming Boxes in 2026" (33K) | Running; keeps the IPTV and app side |
-| **FINEKALI** | Swahili business | Running |
-| **Real Strength** | Fitness, character "Rook", cream-paper style (skill: `faceless-motion-video`) | Running |
-| **Milo's Odds** | "What If" science stories, character Milo, Survival Odds meter (skill: `whatif-animated-video`). 2 videos made (Sun, Black Hole) | The owner dropped it as recommendation-dependent and "luck based" |
-| **NEW: "In This Town" stories** | English, Roblox-style "In This Town…" Shorts plus weekly long compilations | **CURRENT PRIORITY** |
-| NEW (planned): TV & streaming help | Legal TVs, Roku, Fire TV, antennas, settings, for older viewers | Plan ready (30 videos); not started |
-| Drive or Tow (car warning lights) | Faceless car channel | **Parked**: the owner saw no views on new videos in this niche |
+| Braids Reacts (18.4K) | In This Town / In This World Roblox Story Animation Compilation (19 min) | 2.49M in 19 days |
+| Gleeful Reacts (12.6K) | Compilation #4 (34 min) / #1 / #3 / #2 | 1.70M / 944K / 822K / 781K |
+| Swazzler (8.2K) | New In This World/In This Town Roblox Story Compilation (16 min) | 669K |
+| PorkBlox (8K) | MOST SCARY In This Town Videos Compilation (19 min) | 512K |
+| The Groocs (4.8K) | In this Town Scariest Roblox Story Animation Compilation (23 min) | 301K |
+| STLN ROBLOX (1.1K) | Story Animation (24 min) | 270K in 4 days |
+| Dude Fact (951) | Roblox Stories Compilation (19 min) | 114K in 3 days |
 
-The owner records narration with **MiniMax, "Magnetic-voiced Male" voice**, from a "VOICE" text we give them, then sends the mp3. We build the video around that audio.
+Original creators compile their own Shorts too:
+- Custerk Blox: 37-min compilation, 2.4M; 66-min compilation, 962K.
+- Gelo Stories: 2-hour compilation, 239K in 5 days.
 
----
+**Warning:** Braids Reacts writes "All clips belong to their original creator", so it re-uploads other people's Shorts. **That isn't monetizable** (YouTube's reused-content rule) and it risks copyright strikes. We compile **only our own stories.**
 
-## 2. The owner's standing rules (all channels)
-- **No small words on screen.** "I hate small words." Labels at least **84 px**, bold, full colour. Big captions.
-- **Nothing in the top-left corner** (the YouTube overlay sits there).
-- **Very little text on screen:** only meaningful cards.
-- **No music.** The owner adds their own. **SFX at volume 0.025, drone beds at 0.02.**
-- **VOICE text format:** no labels, no stage directions. Numbers written as words ("three thousand", not 3,000). Put the paste-ready text between two dashed lines.
-- **Accurate, sourced facts.** The owner asked for scripts to be "rechecked deeply" several times. Fact-check before you hand over.
-- **Colour rules:**
-  - What If: no yellow, orange or blue.
-  - Car channel: amber, red and green are allowed (they're real warning-light colours).
-- **Evidence over guesses.** The owner wants data (vidIQ / YouTube numbers) behind every niche or idea. They say "guarantee hit": give the strongest evidence, but always be honest that nothing is guaranteed.
-- **"Think outside the box, not your AI shit":** no generic AI-looking output. Make visuals specifically for each video.
-- **The owner can't open .md files in their app.** For anything they need to read, also make a simple **HTML page** (or a PDF or image) they can open.
-- **Pronouns:** use they/them for the owner.
+### Track B: tutorials (last 2 weeks)
+| Channel (subs) | Video | Views |
+|---|---|---|
+| Mr omi (19K) | How to Make Viral Animated Shorts Using Claude (Full Workflow) | **1.18M** |
+| Flashloop Twins (1.8K) | How to Make Viral Roblox "In This Town" 3D Animations in One Prompt | 139K in 7 days |
+| What If Animator (24K) | How to Make Viral Roblox Shorts Using Claude | 96K |
+| Simply Azan (**390**) | How to Make Viral "In This Town" Roblox Shorts Using Claude | 65K in 6 days |
+| Saajwal Gigabyte (**225**) | …3D Animations With Claude Only (FREE SKILL) | 52K in 4 days |
+| Jack Bennett (277) | FREE AI Makes VIRAL Roblox "In This Town" Shorts (No Claude Pro) | 39K |
+
+New tutorials appear every day, so **Track B needs speed** and a different angle. Ours: show OUR real channel results and the real workflow.
 
 ---
 
-## 3. Secrets and safety
-- **Gemini API key (image generation):** the owner pasted one in the old chat, for that chat only. **It is not in the repo and must never be written to any file or commit.** Ask the owner for it, then pass it only as an environment variable: `GEMINI_API_KEY=... python3 gen_all.py`. Before every commit, run `git diff --cached | grep -E "AIza[0-9A-Za-z_-]{20}|AQ[.][0-9A-Za-z_-]{20}"` and make sure it prints nothing.
-- **YouTube policy:**
-  - Never re-upload other creators' clips. YouTube's reused-content rule means no Partner Program money, plus copyright strikes.
-  - Compilations must be made **only from our own Shorts**.
-- **Made for kids:** "In This Town" viewers are largely kids. Write stories that also work for teens and adults, and mark the audience honestly in YouTube Studio.
-- **Our own characters:** don't copy Roblox's exact avatars or logo unless the owner decides to animate inside Roblox Studio (see 4.2).
+## 4. The story formula (studied from 13 top videos; 7 transcripts read)
+Full detail and checklist: `production/in-this-town/hit-formula.md`. The 10 beats:
+1. **The rule in one sentence:** "In this town, …"
+2. **"You see,"** + how it works + the cost.
+3. **3–5 funny ways the town adapts**, e.g. "the mailman delivers on a pogo stick because a bounce only counts as one".
+4. **"My name is…":** the hero is different, or mocked.
+5. **The PLANT:** a skill, object or saying that matters later.
+6. **A loved one in danger** by the halfway point.
+7. **A countdown in numbers:** "300… 250… 3, 2, 1, zero."
+8. **The twist:** the rule's exact wording + the plant ("it only counts steps your FEET take", so he walks on his hands).
+9. **The town changes.**
+10. **A button line under 8 words:** "Everyone except Theo." / "Recess."
+
+**The numbers:**
+- **Length and pace:** the biggest hits run **2:00–2:55**, at **about 3 words a second**, with a first-person kid narrator.
+- **Sound words** are written in ("Knock. Knock. Knock.", "Snip!").
+- **Titles:** 3–7 words + 1 emoji ("Everyone Has A String On Their Back 🧶").
+- **Description:** hashtags only (`#shorts #roblox #entertainment #viral #relatable`).
+
+**Comment engines:**
+- **An arguable loophole:** "why not use cars?" got 18K likes.
+- **A named side character's funny moment:** "Except Theo 😭" got 20K likes.
+- **Rules with numbers** that people do maths on.
+
+**Look:**
+- Vertical 9:16; blocky avatars in lit 3D scenes.
+- Close-ups on faces; rule signs as props ("BY ORDER OF THE TOWN — NO SCISSORS").
+- Night scenes with coloured light, a warm ending, word-by-word captions.
+- **The owner's rule:** captions and any on-screen words must be BIG ("I hate small words").
 
 ---
 
-## 4. CURRENT PRIORITY: the "In This Town" channel
-
-### 4.1 What's done
-- **Research:** `production/in-this-town/research.md` (also published as a page for the owner).
-  - "in this town" gets 1.55M searches a month, up 715%.
-  - **"in this town roblox compilation" gets 235K a month at competition 27**, up 1,051%, with 36% of searches from the US.
-  - Long compilations on small channels (951 to 18K subscribers) get 114K–2.5M views.
-- **Hit formula:** `production/in-this-town/hit-formula.md`, studied from 13 top videos (Gneef 28M–36M, R6Rants 6.7M, Akira's Diary 3.6M). **Every script must pass its checklist.** The 10 beats:
-  1. The rule in one sentence
-  2. "You see," + how it works + the cost
-  3. 3–5 funny ways the town adapts
-  4. "My name is…": the hero is different
-  5. The PLANT (a skill, object or saying)
-  6. A loved one in danger
-  7. A countdown in numbers
-  8. The twist: the rule's exact wording + the plant
-  9. The town changes
-  10. A button line under 8 words
-  - Plus: 2:00–2:45 long, about 3 words a second, first-person kid narrator, sound words ("Crack.", "Knock. Knock."), one arguable loophole left open, one named side character with a funny moment.
-- **Short 01 script:** `scripts/in-this-town-01-lying-turns-you-grey.md`: **"Every Lie Turns You Grey 🩶"** (about 315 words, about 1:50), with a beat map, shot plan and upload pack. **Waiting for the owner's voice recording.**
-- **Posting plan:**
-  - Shorts every day, each linked to the latest compilation with the Short's "related video" setting.
-  - One long compilation a week (15–25 min) of our own stories only, titled "In This Town… Roblox Stories Compilation (#1)".
-  - Make a "Part 2" within 48 hours of any Short that takes off.
-  - Same channel, recurring characters.
-
-### 4.2 Open decision (ask the owner if it's still undecided)
-- **Option A: our own blocky 3D characters.** Built in our Remotion + three.js pipeline (`production/whatif-video-02` project, `@remotion/three`). This was the previous recommendation.
-- **Option B: animate inside Roblox Studio with real Roblox avatars.** This is how the top channels (Gneef, R6Rants) do it. It needs the owner's Roblox Studio work, or a Roblox-capable workflow on their machine.
-
-### 4.3 Next steps
-1. Settle 4.2. If it's Option A, build a **style frame**: Leo (bright orange hair), Mom (half grey) and Grandma as blocky characters in a bright blocky town, vertical 1080×1920. Show stills to the owner before animating.
-2. When the owner sends the mp3:
-   - Transcribe it with faster-whisper to get word timings.
-   - Build the 9:16 Short with **big word-by-word captions** (our version is much bigger than the competitors'), close-ups at emotional beats, rule signs as props, and sound effects at 0.025.
-3. Write shorts 02–10 using the formula. Candidate premises are in `research.md`. Never copy an existing video's premise: one idea, "100 words a day", was dropped because Custerk Blox already made it.
-4. After about 8–12 Shorts, assemble compilation #1 (15–25 min, 16:9 or 9:16, chapters per story).
-5. Optional later: a tutorial video, "How I make In This Town stories with Claude", for adults (better ad pay).
+## 5. How the money works on YouTube (check the current rules in YouTube's help center)
+- **Partner Program (ad revenue):** 1,000 subscribers **plus** either 4,000 public long-form watch hours in 12 months, or 10M Shorts views in 90 days. **Shorts views don't count toward the watch hours**, so long compilations and tutorials are the fastest way in through watch hours.
+- **Long-form ads pay far more per view than Shorts.** That's why the long videos are the money.
+- **Made for kids:** if a story video is for kids, it must be marked that way. That means no personalised ads (lower pay) and no comments. Write stories that also grip teens and adults (mystery, twist, a bit spooky), and set the audience honestly. Tutorials (Track B) are adult content, so this doesn't apply to them.
+- **Never** re-upload others' clips. Use **our own characters**, not copies of Roblox's exact avatars or logo, unless the owner decides to animate inside Roblox Studio.
 
 ---
 
-## 5. Other plans (parked, ready to resume)
-- **TV & streaming help channel:** `production/tv-channel/niche-and-first-10.md` and `production/tv-channel/first-30-videos.md`.
-  - 30 videos in 3 waves, all searched topics that people watch on the TV screen.
-  - Long videos, 8–12 min, no Shorts.
-  - Rules: 100% legal, no IPTV, real screen recordings for tutorials.
-  - Stop/go check at video 30.
-- **Drive or Tow (car):**
-  - `production/drive-or-tow/` (design system `src/car.tsx`, x-ray art, `first-10-videos.md`).
-  - Script 01: `scripts/drive-or-tow-01-check-engine-light-flashing.md` and `drive-or-tow-01-VOICE.txt`.
-  - The owner parked it.
-- **Niche research (11 niches):** `production/niche-research-2026-11.md`.
-- **Milo's Odds:**
-  - `production/whatif-video-02/` (the black-hole film, `UPLOAD.md`, thumbnails) and `production/whatif-channel/` (channel name, icon, description).
-  - Scripts are in `scripts/whatif-video-02-*`.
-  - The rendered `Milo-Black-Hole.mp4` sits in the repo root and is git-ignored.
+## 6. What should happen in the new session (recommended plan)
+### Step 1: Decide with the owner (ask these first)
+1. **Track A, Track B, or both?**
+   - Recommendation: **both, as two channels.**
+     - The **story channel** (Shorts + weekly compilations) gets the big view numbers.
+     - The **tutorial channel** ("how I make In This Town videos with Claude") gets better-paying adult search traffic, using the story channel's real results as proof.
+   - Mixing kids' stories and adult tutorials on one channel confuses YouTube's recommendations.
+   - If the owner wants only one: the data says **Track B** pays best per view and is the most search-driven. **Track A** has the bigger view numbers.
+2. **The look:**
+   - (a) Our own blocky 3D characters built in our Remotion + three.js pipeline (`production/whatif-video-02` is a working project with `@remotion/three`), or
+   - (b) real Roblox avatars animated in Roblox Studio, which is how Gneef and R6Rants do it.
+
+### Step 2: Story channel (Track A)
+1. **Make short 01:** `scripts/in-this-town-01-lying-turns-you-grey.md`, "Every Lie Turns You Grey 🩶" (about 1:50, already fitted to the formula). The owner records the voice (MiniMax "Magnetic-voiced Male") and sends the mp3. Then:
+   - transcribe with faster-whisper for word timings;
+   - animate in 9:16 with big word captions, close-ups, sign props, and SFX at volume 0.025;
+   - **no music**: the owner adds their own unless they say otherwise.
+2. **Write shorts 02–12** with the formula checklist. Ideas to develop are in `production/in-this-town/research.md`. **Never reuse an existing video's premise.**
+3. **Post rhythm:**
+   - 1–2 Shorts a day, each linked to the newest compilation with the Short's "related video" setting.
+   - A "Part 2" within 48 hours of any Short that takes off.
+4. **Every week, one long compilation (15–25 min) of our own 8–12 stories**, with a chapter per story. Title it for search:
+   - "In This Town… Roblox Stories Compilation (#1)"
+   - Themed versions later: "Scariest In This Town Stories Compilation" (PorkBlox got 512K on that angle), "Saddest…", seasonal (Christmas is coming).
+5. **Description/tags** use the Track A phrases from section 2.
+
+### Step 3: Tutorial channel (Track B)
+1. **First video, target "how to make in this town videos" (232K, competition 22):**
+   - Title idea: "How to Make 'In This Town' Videos With Claude (Full Workflow, Free)".
+   - Length: 10–15 min.
+   - Chapters: story with the 10-beat formula → characters → scenes → voice → captions → compilation for long-form money.
+   - Cover the "voice" and "background music" questions too (22K and 21.7K searches).
+2. **Follow-ups:**
+   - "…Shorts" (19K, comp 21)
+   - "Roblox In This Town tutorial" (54K, comp 25)
+   - "The formula behind 30M-view In This Town stories" (our studied formula)
+   - "I posted In This Town videos for 30 days: real results"
+3. **Be honest:** show real numbers and never promise "guaranteed" money.
+
+### Step 4: Turn the working workflow into a skill
+Once short 01 works, write a skill at `.claude/skills/in-this-town/` so any agent can repeat it. Include the formula checklist, the character sheet, the render settings and the upload pack.
 
 ---
 
-## 6. Production pipeline (how videos are built)
-- **Remotion project:** `production/whatif-video-02/`
-  - `package.json`: remotion 4, @remotion/three, three 0.169, @react-three/fiber 8.
-  - `src/`: compositions; `Root.tsx` registers them.
-  - `render_film.sh`: chunked, resumable render plus audio, then joins with ffmpeg.
-  - `stills.mjs`: preview stills (`COMP=<id> node stills.mjs 1 5 10` renders seconds 1, 5 and 10).
-- **Local setup:**
-  1. `cd production/whatif-video-02 && npm install && npm i @remotion/bundler @remotion/renderer`
-  2. Install ffmpeg.
-  3. `pip install pillow opencv-python-headless faster-whisper`.
-  4. Fonts: Inter, Roboto Mono, Roboto Black, Barlow Condensed.
-- **Local path fixes:**
-  - `render_film.sh` and `stills.mjs` point `--browser-executable` at a cloud-only Chrome path (`/opt/pw-browsers/...`). Locally, **remove that flag/option** (Remotion downloads its own browser), or point it at your Chrome.
-  - `--gl=swangle` was needed for three.js in the cloud. Locally try `--gl=angle`, or leave it out.
-- **Car design system:** `production/drive-or-tow/src/car.tsx` (Cluster, Verdict, Bill, XRay components). Copy it into the Remotion `src/` and register a composition to use it.
-- **Images:**
-  - `production/whatif-video-02/gen_all.py` calls Gemini image models and retries across `gemini-3.1-flash-image`, `gemini-2.5-flash-image` and `gemini-3-pro-image`. They often return 503, so it retries.
-  - The key comes from the env var only.
-- **Audio:**
-  - Mix with ffmpeg `adelay`/`amix`, which is faster than a Remotion audio render.
-  - Silence glitches with a volume ramp, keeping the timing.
-- **Delivery:** for big files, re-encode with `-crf 19 -maxrate 9M`.
-- **Skills (in `.claude/skills/`):** `whatif-animated-video` (with PLAYBOOK.md and lessons learned), `faceless-motion-video`, `loan-app-review`. **Make a new `in-this-town` skill** once the first Short's workflow is proven.
+## 7. Files from the research
+- `production/in-this-town/research.md`: the trend, demand, proof, risks and premises.
+- `production/in-this-town/hit-formula.md`: the full 10-beat formula, numbers and checklist.
+- `scripts/in-this-town-01-lying-turns-you-grey.md`: short 01 (voice text, beat map, shot plan, upload pack).
+- Published pages for the owner (they can't open .md files in their app):
+  - research: https://claude.ai/artifact/Qb57kpXd2uwaUpaZ8i6547
+  - formula: https://claude.ai/artifact/FL3RyebbSUXZmvFE5t8De9
 
-## 7. Research tools used
-- **vidIQ MCP:** keyword research, outliers, transcripts, video data. About 40 add-on credits were left on Nov 18 and the renewable credits reset on Nov 29. Calls cost 5 credits each.
-- **FlowMap MCP:** the owner's own app.
-  - `niche_report`, `youtube_search` and `youtube_video` use the owner's YouTube API quota.
-  - `keyword_ideas` is free.
-  - Notes and boards can be saved there.
-- If the local session doesn't have these connectors, ask the owner to connect them, or work from the saved research files.
+## 8. Owner rules that apply here
+- **Big text only.** Nothing in the top-left corner. Very little text besides the captions.
+- **No music** in our edit (the owner adds it). SFX at 0.025.
+- **VOICE text:** no labels, numbers written as words, between two dashed lines.
+- **Data first.** Give honest "no guarantee" framing, but pick what the evidence says.
+- **Pages the owner can open:** make an HTML page or image for anything they need to read.
+- **Secrets:**
+  - The Gemini image key is NOT stored anywhere. Ask the owner, use it only as the `GEMINI_API_KEY` environment variable, and never commit it.
+  - Before every commit, run `git diff --cached | grep -E "AIza[0-9A-Za-z_-]{20}|AQ[.][0-9A-Za-z_-]{20}"` and make sure it prints nothing.
+- **Git branch:** `claude/youtube-strategy-content-plan-sqgmdm`. Don't touch the WhatsApp bot code in this repo (`index.js`, `lib/`, `plugins/`).
 
-## 8. Git conventions
-- **Branch:** `claude/youtube-strategy-content-plan-sqgmdm`. Commit clear messages; push with `git push -u origin claude/youtube-strategy-content-plan-sqgmdm`.
-- **Pull requests:** don't open one unless the owner asks.
-- **Never commit:** `Milo-Black-Hole.mp4`, narration mp3s or other large media (they're git-ignored), or any API key.
+## 9. Research tools
+- **vidIQ:** about 30 add-on credits are left; the monthly credits reset Nov 29. Calls cost 5 credits.
+- **FlowMap MCP:** `keyword_ideas` is free; `niche_report`, `youtube_search` and `youtube_video` use the owner's YouTube API quota.
+- If the local session doesn't have these connectors, work from the files above.

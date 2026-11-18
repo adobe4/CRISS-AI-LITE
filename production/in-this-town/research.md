@@ -76,3 +76,16 @@ This angle is filling up fast: a new tutorial appears every day.
 8. In This Town, Your Height Shows Your Bank Account
 9. In This Town, Mirrors Show Tomorrow
 10. In This Town, Everyone Hears Your Thoughts
+
+## Update: tutorial search demand, a second long-form money track (vidIQ, Nov 18)
+| Search phrase | Searches/mo | Competition | Growth |
+|---|---|---|---|
+| how to make in this town videos | 232,036 | 22 | +2,738% |
+| in this town roblox tutorial | 53,781 | 25 | n/a |
+| how to make in this town videos with claude | 32,360 | 22 | n/a |
+| how to create in this town videos | 25,845 | 22 | n/a |
+| in this town claude | 22,116 | 21 | n/a |
+| in this town voice / background music | 22,426 / 21,711 | 47 / 33 | n/a |
+| how to make in this town shorts | 19,372 | 21 | n/a |
+
+**Why it matters:** tutorial viewers are adult creators, so ads pay more and "made for kids" doesn't apply. It's a long-form, search-driven track. See HANDOFF.md section 6 for the two-channel plan.
