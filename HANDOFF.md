@@ -8,11 +8,13 @@ This file comes from a cloud research session (Nov 18, 2026). It covers **only**
 ---
 
 ## 0. The owner's decisions (fixed, don't re-ask)
-- **ONE channel: In This Town stories. No tutorial channel.**
-- **The money comes from YouTube long-form videos:** long compilations of our own stories. Most creators in this trend post only Reels and Shorts, so long-form YouTube is less crowded.
-- **Viewers come mainly from YouTube search.** Shorts are posted too, to pull in more of the same viewers.
-- **NOT a kids' channel.** The stories are for **teens and adults**. Upload as **"No, it's not made for kids."** (Details in section 5.)
-- **The owner wants evidence and "guarantee hits".** Always show data. Be honest that nothing is guaranteed, but pick what the data says works.
+- **ONE channel: In This Town stories. LONG-FORM ONLY.** No Shorts (the owner found Shorts too hard) and no tutorial channel.
+- **The money comes from YouTube long-form:** original story episodes of 18–25 min. Most creators in this trend post only on Instagram Reels and Shorts.
+- **Viewers come mainly from YouTube search.**
+- **NOT a kids' channel:** teens and adults. Upload as **"No, it's not made for kids."**
+- **Cheap production:** our own characters → AI images → motion → a few AI video clips → narration. Not full 3D animation.
+- **THE PLAN TO FOLLOW:** `production/in-this-town/long-form-strategy.md`. Read it first.
+- **The owner wants evidence and "guarantee hits".** Show data, and be honest that nothing is guaranteed.
 
 ---
 
@@ -112,8 +114,8 @@ Full detail and checklist: `production/in-this-town/hit-formula.md`. The 10 beat
 
 ## 5. How the money works on YouTube (check the current rules in YouTube's help center)
 - **Partner Program (ad revenue):** 1,000 subscribers **plus** either 4,000 public long-form watch hours in 12 months, or 10M Shorts views in 90 days.
-  - **Shorts views don't count toward the watch hours**, so the weekly long compilations are what gets the channel into the program through watch hours.
-- **Long-form ads pay far more per view than Shorts.** The long compilations are the money; Shorts are for reach.
+  - Our route is the **4,000 watch hours**: long 18–25 min episodes build them fast.
+- **Long-form ads pay far more per view than Shorts.** We post long-form only.
 - **"Not made for kids":**
   - Upload every video as **No, it's not made for kids.** That keeps personalised ads (higher pay) and comments.
   - YouTube also judges from the content itself: kid-targeted themes, characters and language can get a channel reclassified.
@@ -123,49 +125,41 @@ Full detail and checklist: `production/in-this-town/hit-formula.md`. The 10 beat
 ---
 
 ## 6. What should happen in the new session
-### Step 1: One open question for the owner
-**The look:**
-- (a) Our own blocky 3D characters built in our Remotion + three.js pipeline (`production/whatif-video-02` is a working project with `@remotion/three`), or
-- (b) real Roblox avatars animated in Roblox Studio, which is how Gneef and R6Rants do it.
-
-### Step 2: Make short 01
-- **Script:** `scripts/in-this-town-01-lying-turns-you-grey.md`, "Every Lie Turns You Grey 🩶" (about 1:50, already fitted to the formula; a mother's sacrifice, which works for adults).
-- **Voice:** the owner records it with MiniMax "Magnetic-voiced Male" and sends the mp3.
-- **Then:**
-  - transcribe with faster-whisper for word timings;
-  - animate in 9:16 with big word captions, close-ups, sign props, and SFX at volume 0.025;
-  - **no music**: the owner adds their own.
-- **Show still frames** of the characters and town to the owner **before** animating everything.
-
-### Step 3: Story pipeline
-1. **Write shorts 02–12** with the formula checklist, in the teen/adult tone from section 4.
-   - Ideas to develop are in `production/in-this-town/research.md`.
-   - **Never reuse an existing video's premise.**
-2. **Post rhythm:**
-   - 1–2 Shorts a day, each linked to the newest compilation with the Short's "related video" setting.
-   - A "Part 2" within 48 hours of any Short that takes off.
-
-### Step 4: The money videos, weekly long compilations
-1. **Every week, one compilation (15–25 min) of our own 8–12 stories**, with a chapter per story.
-2. **Titles built on the search phrases:**
-   - "In This Town… Roblox Stories Compilation (#1)"
-   - "Scariest In This Town Stories Compilation"
-   - Seasonal ones (Christmas is coming).
-3. **Description:** the search phrases from section 2, plus a chapter per story.
-4. **Thumbnail:** the strongest moment from the week's best Short, with BIG text.
-
-### Step 5: Turn the working workflow into a skill
-Once short 01 works, write a skill at `.claude/skills/in-this-town/` so any agent can repeat it. Include the formula checklist, the teen/adult tone rules, the character sheet, the render settings, the upload pack and the "not made for kids" setting.
+Follow `production/in-this-town/long-form-strategy.md`. In short:
+1. **Never use other people's clips**, including Instagram-only creators, even with permission. YouTube: reused content *"applies even if you have permission"* and it hits *"the whole channel"*. Never make look-alike copies of viral videos.
+2. **Build "the town" (one universe):**
+   - a town name, a map, 6–8 recurring characters, the main locations, and an own blocky low-poly style (Roblox-like, but no Roblox logo or exact avatars);
+   - make **character reference sheets** with the Gemini image models, and reuse them as reference images for consistency;
+   - show the owner stills first.
+3. **Episode format:**
+   - native **16:9, 18–25 min, for TV**;
+   - a 20-second cold open (the most shocking AI clip);
+   - 6–8 stories of 2–3 min, each on the 10-beat formula but varied in genre and ending (so it isn't "inauthentic");
+   - rulebook cards between stories, a teaser of the next episode's rule, and chapters titled with each rule.
+4. **Per-story production (cheap hybrid):**
+   - 20–30 AI images at 16:9;
+   - motion on every image in Remotion (push-in, parallax, shake, fog, particles, blinks);
+   - only **3 AI video clips per story** (hook, twist, ending), image-to-video with the owner's tool (Kling, Veo, Runway or similar);
+   - one first-person narrator (the owner's MiniMax voice), SFX at volume 0.025, BIG captions, no music.
+5. **Packaging:**
+   - titles carry the search phrases ("In This Town, Every Rule Is DEADLY 😨 | Roblox Stories Compilation");
+   - the description starts with a hook question, then chapters, then the search phrases;
+   - the thumbnail shows 3 big faces with 3 BIG rule labels.
+6. **Episode 1:** 6 stories, and story 1 can be `scripts/in-this-town-01-lying-turns-you-grey.md`. Then 2 episodes a week up to episode 7.
+7. **Judge each episode after 7 days:** click-through 5%+, average view duration 35%+ of length, and a growing share of views from YouTube search. Adjust thumbnails, the cold open, pacing or titles accordingly.
+8. **Once the pipeline works,** write a skill at `.claude/skills/in-this-town/` (story bible, formula checklist, prompts, Remotion templates, upload pack, "not made for kids").
 
 ---
 
 ## 7. Files from the research
 - `production/in-this-town/research.md`: the trend, demand, proof, risks and premises.
 - `production/in-this-town/hit-formula.md`: the full 10-beat formula, numbers and checklist.
-- `scripts/in-this-town-01-lying-turns-you-grey.md`: short 01 (voice text, beat map, shot plan, upload pack).
+- `production/in-this-town/long-form-strategy.md`: **the plan** (policy, ideas checked, proof, format, pipeline, packaging, test plan).
+- `scripts/in-this-town-01-lying-turns-you-grey.md`: story 1 (voice text, beat map, shot plan). Use it as the first story of Episode 1.
 - Published pages for the owner (they can't open .md files in their app):
   - research: https://claude.ai/artifact/Qb57kpXd2uwaUpaZ8i6547
   - formula: https://claude.ai/artifact/FL3RyebbSUXZmvFE5t8De9
+  - strategy: https://claude.ai/artifact/S2ZEeZfeddrN6UJNXkZ17v
 
 ## 8. Owner rules that apply here
 - **Big text only.** Nothing in the top-left corner. Very little text besides the captions.
