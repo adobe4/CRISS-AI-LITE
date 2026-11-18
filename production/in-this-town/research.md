@@ -39,7 +39,8 @@
 
 **Shorts are where the giants are:** 5M–36M views per Short (Gneef, Ryex, Gelo Stories, Revan, BloxyRiddles, KELNI).
 
-## A second money angle: "how I make them with Claude" tutorials
+## (Not pursued) "How I make them with Claude" tutorials
+**Owner decision, Nov 18: no tutorial channel.** This is kept here for reference only.
 These are long-form videos for an **adult** audience, so they pay better than kids' content.
 - Mr omi (19K subs): "How to Make Viral Animated Shorts Using Claude" got **1.18M**.
 - Flashloop Twins (1.8K subs): 139K.
@@ -50,14 +51,13 @@ This angle is filling up fast: a new tutorial appears every day.
 
 ## Watch out for these
 1. **Re-uploading other people's Shorts is not monetizable.** Most of the "Reacts" compilation channels re-upload other creators' Shorts. YouTube's reused-content rule means no Partner Program money, and they risk copyright claims and strikes. **We only compile OUR OWN stories.**
-2. **Made for kids.** A lot of the audience is children. If a video is made for kids, YouTube requires marking it that way, which means no personalized ads (lower pay) and no comments. Write stories that also work for teens and adults (mystery, twist, a bit spooky) and set the audience honestly.
+2. **Not made for kids (owner decision).** Our channel is for teens and adults. Upload as "No, it's not made for kids". YouTube also judges from the content, so keep the themes, titles and thumbnails clearly teen/adult (suspense, horror, mature emotion), with no gore or swearing.
 3. **The Roblox brand.** Use our own blocky character style rather than copying Roblox's exact avatars or logo. "Roblox" in titles and tags is common for search, but the characters must be ours.
 4. **It's a trend (+715%), not evergreen.** The window is now. Every week, more creators arrive with the same Claude workflow, so speed matters.
 
 ## The plan: Shorts for reach, compilations for money
 1. **Original "In This Town" Shorts** (1–3 min), 1–2 per day, made with Claude + our three.js/Remotion pipeline. Recurring characters, plus "Part 2" sequels when one hits (BloxyRiddles' Part 2 got 5.7M).
 2. **Every week, a long-form compilation** (15–25 min) of our own 8–12 stories. Title: "In This Town… Roblox Stories Compilation (#1)". This targets 235K monthly searches at competition 27.
-3. **Later:** a tutorial video, "How I make In This Town stories with Claude", on the same channel or a second one, for the better-paying adult audience.
 
 ## Weekly posting rhythm (one channel, Shorts and long videos together)
 - **Shorts every day.** Each Short links to the latest compilation through YouTube's "related video" setting, which puts a tap-through link under the Short.
@@ -77,7 +77,7 @@ This angle is filling up fast: a new tutorial appears every day.
 9. In This Town, Mirrors Show Tomorrow
 10. In This Town, Everyone Hears Your Thoughts
 
-## Update: tutorial search demand, a second long-form money track (vidIQ, Nov 18)
+## (Not pursued) Tutorial search demand (vidIQ, Nov 18), for reference only
 | Search phrase | Searches/mo | Competition | Growth |
 |---|---|---|---|
 | how to make in this town videos | 232,036 | 22 | +2,738% |
@@ -88,4 +88,4 @@ This angle is filling up fast: a new tutorial appears every day.
 | in this town voice / background music | 22,426 / 21,711 | 47 / 33 | n/a |
 | how to make in this town shorts | 19,372 | 21 | n/a |
 
-**Why it matters:** tutorial viewers are adult creators, so ads pay more and "made for kids" doesn't apply. It's a long-form, search-driven track. See HANDOFF.md section 6 for the two-channel plan.
+**Owner decision:** one story channel only, no tutorials.

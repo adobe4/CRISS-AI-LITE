@@ -26,7 +26,7 @@
 ## What the numbers say
 - **Length:** the 28M–36M hits run **1:53 to 2:55**. The 1:05 stories got 2–3.6M. A 0:35 twist-only story got 4.4M. **Aim for 2:00–2:45.**
 - **Pace:** about **3 words a second**, so 330–520 words. It's fast, with no pauses.
-- **Voice:** one narrator, first person ("I"), sounding like a kid or teen.
+- **Voice:** one narrator, first person ("I"). For our channel, a teen or adult voice.
 - **Sound words are written into the script:** "Tink, tink-a-tink." "Knock. Knock. Knock." "Snip!" "Crack." Commenters quote them (one comment about "the most aggressive snip" got 1.2K likes).
 - **Titles:** 3–7 words plus ONE emoji. Gneef's biggest titles drop "In This Town" and name the strange thing instead: "Everyone Has A String On Their Back 🧶", "The Knocker Copies Your Voice ❄️". **The first spoken line always says "In this town" or "In this world".**
 - **Description:** only hashtags: `#shorts #roblox #entertainment #viral #relatable`.
@@ -45,7 +45,7 @@
 - **Recurring look:** a hero with bright hair (orange or purple), so viewers recognise the channel.
 
 ## Tone that works for the widest audience
-- **Gneef's mix** wins the biggest numbers (28M–36M): spooky monster + kid hero + clever win + cozy funny ending. It's safe for kids but thrilling for teens and adults.
+- **Gneef's mix** wins the biggest numbers (28M–36M): spooky monster + kid hero + clever win + cozy funny ending. **Our channel is for teens and adults (owner decision):** lean into thriller and horror, dark twists (R6Rants-style) and grown-up emotion. Keep it ad-safe: no gore or swearing.
 - **R6Rants goes darker** (The Hollows ends with the dad gone): 6.7M, but a smaller ceiling.
 - **Akira's Diary does short underdog lessons** (65 s): steady 2–3.6M.
 
