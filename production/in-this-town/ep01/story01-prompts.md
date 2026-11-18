@@ -1,0 +1,158 @@
+# Episode 1, story 1: "Every Lie Turns You Grey": prompts
+
+**Step 1:** generate the 4 reference images (Nano Banana 2.1). **Step 2:** generate the 24 shots, attaching the character sheets when a prompt says so. **Step 3:** make the 3 clips (Gemini Omni Flash 1.2) from the listed start frames.
+**File names to upload:** use the names shown (e.g. `s01_07.png`, `s01_c2.mp4`).
+
+## Reference images
+### ref_town: Town establishing shot (no characters needed)
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Wide establishing shot of Harrowmere, a small foggy blocky town at golden hour: a main street of tall narrow houses with steep roofs, a clock tower in a small square, warm windows, old street lamps, pine woods and hills behind, light fog. Peaceful but slightly eerie.
+```
+### ref_leo: Character sheet: Leo (the hero, 14)
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Character reference sheet on a plain light-grey background: the same character shown front view, side view, back view, plus three face close-ups (happy, scared, crying). Leo, a 14-year-old boy: messy bright orange blocky hair, warm beige skin, mint-green hoodie, dark blue jeans, white sneakers. Bright, full colour, friendly face.
+```
+### ref_mom: Character sheet: Nora (Leo's mom)
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Character reference sheet on a plain light-grey background: front view, side view and two face close-ups. Nora, a tired but kind mother in her late 30s: long dark-brown hair in a low ponytail, navy cardigan over a white shirt, grey trousers, black flat shoes. IMPORTANT: large parts of her body are grey like matte concrete — both hands, both forearms and the left half of her face are grey stone-like, the rest of her has normal warm skin colour.
+```
+### ref_grandma: Character sheet: Grandma June
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Character reference sheet on a plain light-grey background: front view, side view and two face close-ups (wise, smiling). Grandma June: white hair in a round bun, small round glasses, maroon knitted shawl over a cream dress, holding knitting needles with red yarn. Warm, sharp-eyed, a little mischievous.
+```
+
+## Shots (16:9)
+### s01_01 · CLIP 1 (hook)
+> In this town, every lie turns part of you grey.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Main street of Harrowmere at golden hour, colourful blocky townspeople walking. Close-up of a teenage boy in a red jacket who has just told a lie: a small grey concrete-like patch appears on his cheek, he touches it in shock. Bright colours everywhere except that grey spot.
+```
+### s01_02
+> A small lie gives you a grey freckle. A big lie, a grey hand.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Extreme close-up of a blocky hand held up to the camera: the fingers and back of the hand are grey matte concrete, the wrist still normal warm skin colour. Soft daylight, blurred street behind.
+```
+### s01_03
+> And if you ever turn completely grey, you turn to stone. Forever.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Town square of Harrowmere in light fog: a completely grey stone statue of a blocky man frozen mid-step, his face caught in surprise, pigeons on his shoulders, townspeople walking around it without looking. Moody, quiet.
+```
+### s01_04
+> So nobody here lies. Weathermen only say maybe.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. A TV news studio: a blocky weatherman in a suit standing beside a big weather map, holding up a large blank white card toward the camera with a nervous smile. The card is completely blank (text will be added later).
+```
+### s01_05
+> Surprise parties are illegal.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. A street lamppost in Harrowmere with an official metal sign showing only a picture of a party hat and balloons inside a red prohibition circle with a diagonal line. No words on the sign. Daylight, blocky houses behind.
+```
+### s01_06 · Use the attached character sheet(s) so the characters look exactly the same.
+> And when Grandma knits you an ugly sweater, you're only allowed to say, wow. That's a sweater.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Use the attached character sheet(s) so the characters look exactly the same. Cozy living room: Grandma June proudly holds up a huge lumpy, ugly knitted sweater with uneven sleeves and a weird pattern; Leo stands in front of it with a forced, polite, frozen smile. Warm lamp light, funny moment.
+```
+### s01_07 · Use the attached character sheet(s) so the characters look exactly the same.
+> My name is Leo, and I have never told a single lie.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Use the attached character sheet(s) so the characters look exactly the same. Hero portrait of Leo on the front porch of a narrow blocky house, looking proudly at the camera, bright full colour, soft morning light, town street blurred behind.
+```
+### s01_08 · Use the attached character sheet(s) so the characters look exactly the same.
+> But my mom is the greyest person in town. Her hands. Her arms. Half her face.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Use the attached character sheet(s) so the characters look exactly the same. Nora waiting alone at a school gate in the afternoon, holding her bag with grey stone-like hands, the left half of her face grey. Other parents keep their distance and stare. Colourful school behind her.
+```
+### s01_09
+> Kids at school call her The Statue.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. A group of blocky school kids in bright clothes laughing and pointing toward the school gate, one kid pretending to be frozen like a statue. School yard, afternoon.
+```
+### s01_10 · Use the attached character sheet(s) so the characters look exactly the same.
+> So I stopped walking home with her.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Use the attached character sheet(s) so the characters look exactly the same. Leo walking away down the street alone with his head down and hands in his hoodie, while Nora stands still at the school gate behind him, watching him go. Cloudy afternoon, long shadows, sad mood.
+```
+### s01_11 · Use the attached character sheet(s) so the characters look exactly the same.
+> Grandma says there's only one way to wash grey away. Someone has to say out loud the true reason it's there.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Use the attached character sheet(s) so the characters look exactly the same. Night, by a fireplace: Grandma June in her armchair raising one finger wisely, firelight on her glasses; Leo sits on the rug listening closely. Warm orange light, deep shadows.
+```
+### s01_12 · Use the attached character sheet(s) so the characters look exactly the same.
+> Nobody ever does. Nobody wants to know.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Use the attached character sheet(s) so the characters look exactly the same. Nora sitting alone on an old couch at night, grey hands resting in her lap, lit only by the blue glow of a TV. Quiet, lonely living room.
+```
+### s01_13 · Use the attached character sheet(s) so the characters look exactly the same.
+> Then last winter, Mom's grey started climbing. Her neck. Her chin. Her lips.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Use the attached character sheet(s) so the characters look exactly the same. Close-up of Nora's face by a frosty window with snow falling outside: grey stone texture creeping up her neck, over her chin and touching her lips. She looks tired but calm.
+```
+### s01_14 · Use the attached character sheet(s) so the characters look exactly the same.
+> One night at dinner, there was only one plate. She pushed it to me. I already ate. Grey crept over her cheek.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Use the attached character sheet(s) so the characters look exactly the same. Small kitchen at night, a single plate of food on a little wooden table. Nora gently slides the plate toward Leo with a soft smile; a fresh grey patch spreads over her cheek. Leo looks at the plate. Warm dim light.
+```
+### s01_15 · Use the attached character sheet(s) so the characters look exactly the same.
+> She wrapped her coat around me. I'm not cold. Grey over her ear.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Use the attached character sheet(s) so the characters look exactly the same. Snowy street at dusk: Nora wraps her own thick coat around Leo, leaving herself in a thin cardigan in the falling snow, smiling; grey spreads over her ear. Street lamps glowing.
+```
+### s01_16 · Use the attached character sheet(s) so the characters look exactly the same.
+> The rent letter came. She hid it. Everything's okay. And the grey reached her eyes.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Use the attached character sheet(s) so the characters look exactly the same. Hallway by the front door: Nora hides an envelope behind her back and gives Leo a bright forced smile; grey stone texture now surrounds both her eyes. Leo stands in the doorway, unsure.
+```
+### s01_17 · CLIP 2 (twist) · Use the attached character sheet(s) so the characters look exactly the same.
+> Then she stopped moving. Her fingers went hard. My mom was turning to stone right in front of me.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Use the attached character sheet(s) so the characters look exactly the same. Kitchen at night: Nora frozen mid-motion reaching for a cup, almost her whole body now grey stone with only a little colour left on her face; Leo in the foreground, terrified, hands reaching toward her. Cold blue light, dramatic.
+```
+### s01_18 · Use the attached character sheet(s) so the characters look exactly the same.
+> And suddenly, I understood every single spot.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Use the attached character sheet(s) so the characters look exactly the same. Extreme close-up of Leo's face, eyes wide and wet with tears, a warm glow on his face as if memories are flashing. Dark background, emotional.
+```
+### s01_19 · Use the attached character sheet(s) so the characters look exactly the same.
+> I threw the window open and screamed it to the whole street.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Use the attached character sheet(s) so the characters look exactly the same. Leo throws open a tall wooden window at night, snow blowing in around him, the snowy street below with neighbours' windows lighting up one by one. Shot from inside the room behind him.
+```
+### s01_20 · Use the attached character sheet(s) so the characters look exactly the same.
+> My mom lied so I could eat! She lied so I'd be warm! She lied so I wouldn't be scared!
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Use the attached character sheet(s) so the characters look exactly the same. Low angle from the street up at Leo leaning out of the lit window, shouting with all his strength, snow swirling; neighbours lean out of other windows to listen. Powerful, emotional.
+```
+### s01_21 · CLIP 3 (payoff) · Use the attached character sheet(s) so the characters look exactly the same.
+> Crack. The grey on her face split like ice... until she was bright again, crying and laughing at the same time.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Use the attached character sheet(s) so the characters look exactly the same. Kitchen, warm golden light pouring in: Nora's grey stone shell is cracking all over like ice, pieces flaking off like grey snowflakes, her real warm colour showing underneath; she is laughing and crying at the same time. Leo hugs her waist.
+```
+### s01_22 · Use the attached character sheet(s) so the characters look exactly the same.
+> The next morning, I held her hand all the way to school.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Use the attached character sheet(s) so the characters look exactly the same. Bright snowy morning: Leo and Nora (now fully normal colour, no grey) walk hand in hand down the street toward the school, smiling; the kids at the school gate watch in silence.
+```
+### s01_23 · Use the attached character sheet(s) so the characters look exactly the same.
+> And when Grandma knitted me another ugly sweater, I told her I loved it.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Use the attached character sheet(s) so the characters look exactly the same. Living room: Grandma June holds up an even uglier, giant lumpy sweater with a crooked reindeer; Leo smiles a big warm smile. Cozy Christmas lights in the background.
+```
+### s01_24 · Use the attached character sheet(s) so the characters look exactly the same.
+> My first grey freckle. Worth it.
+```
+Stylized 3D render in a blocky toy-figure style: characters have square block heads with simple painted faces (dot eyes, small expressive mouth, bold eyebrows), rectangular torsos, blocky arms and legs, smooth matte plastic material, like a polished low-poly game animation. Cinematic lighting, soft shadows, gentle depth of field, rich but natural colour. Widescreen 16:9 frame. No text, no letters, no logos, no watermark. Use the attached character sheet(s) so the characters look exactly the same. Close-up of Leo smiling happily, with one tiny grey freckle on his cheek, wearing the ugly sweater. Warm, soft light.
+```
+
+## Clips (image-to-video)
+### s01_c1 (Start frame: s01_01.png)
+```
+Slow push-in on the boy's face. The small grey patch on his cheek spreads a little and he touches it in shock, eyes widening. Townspeople keep walking in the background. Natural motion, no camera cuts, 6 seconds.
+```
+### s01_c2 (Start frame: s01_17.png)
+```
+Grey stone texture slowly spreads over the last coloured part of Nora's face until she is completely still; a little stone dust falls from her fingers. Leo in the foreground reaches toward her, trembling. Slow dolly-in, no camera cuts, 6 seconds.
+```
+### s01_c3 (Start frame: s01_21.png)
+```
+The grey shell on Nora cracks and breaks apart, pieces drifting down like grey snowflakes, revealing her warm colour underneath; she laughs and cries and hugs Leo tightly. Warm light grows brighter. Gentle camera move, no cuts, 7 seconds.
+```
