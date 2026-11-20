@@ -1,1 +1,4 @@
 *.mp4
+
+# In-This-Town renders (large)
+production/in-this-town/**/Story*.mp4
